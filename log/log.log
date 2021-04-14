@@ -1,0 +1,1016 @@
+21-04-12 20:21:30.338 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 20:21:30.083 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 11812 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 20:21:30.385 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 20:21:30.449 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 20:21:30.454 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 20:21:31.892 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 20:21:31.905 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 20:21:31.908 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 20:21:31.911 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 20:21:32.028 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 20:21:32.030 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1572 ms
+21-04-12 20:21:33.241 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 20:21:33.351 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 20:21:33.536 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@371e5011, org.springframework.security.web.context.SecurityContextPersistenceFilter@ef1e0a9, org.springframework.security.web.header.HeaderWriterFilter@37c09cb6, org.springframework.security.web.authentication.logout.LogoutFilter@623eb68e, com.kayn.auth.JWTAuthenticationFilter@56a7b5b8, com.kayn.auth.JWTAuthorizationFilter@31c9e657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b8651bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3eed5ee1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1da22501, org.springframework.security.web.session.SessionManagementFilter@275188b5, org.springframework.security.web.access.ExceptionTranslationFilter@b99d2e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ed82595]
+21-04-12 20:21:33.674 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 20:21:33.967 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 20:21:33.993 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 20:21:34.014 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 20:21:34.028 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.988 seconds (JVM running for 6.498)
+21-04-12 20:31:27.221 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 20:31:26.938 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 15200 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 20:31:27.269 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 20:31:27.325 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 20:31:27.328 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 20:31:28.765 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 20:31:28.780 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 20:31:28.784 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 20:31:28.786 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 20:31:28.911 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 20:31:28.914 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1583 ms
+21-04-12 20:31:30.199 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 20:31:30.336 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 20:31:30.565 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b12536d, org.springframework.security.web.context.SecurityContextPersistenceFilter@124a22b1, org.springframework.security.web.header.HeaderWriterFilter@59bd4b45, org.springframework.security.web.authentication.logout.LogoutFilter@3b2058a2, com.kayn.auth.JWTAuthenticationFilter@6444fefb, com.kayn.auth.JWTAuthorizationFilter@52531557, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aa151f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54db9424, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4edb032, org.springframework.security.web.session.SessionManagementFilter@8730c06, org.springframework.security.web.access.ExceptionTranslationFilter@2f35ba8b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4699b4d3]
+21-04-12 20:31:30.707 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 20:31:31.033 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 20:31:31.058 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 20:31:31.078 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 20:31:31.098 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.313 seconds (JVM running for 6.82)
+21-04-12 20:32:41.629 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-12 20:32:41.632 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-12 20:32:41.635 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-12 20:32:53.226 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-12 20:32:53.406 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-12 20:33:14.519 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - allGoodsmacbook
+21-04-12 20:33:14.733 [http-nio-8888-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'productId' is not present]
+21-04-12 20:35:07.380 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - productDet589015183052
+21-04-12 20:39:05.390 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - allGoodsmacbook
+21-04-12 20:39:05.501 [http-nio-8888-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'productId' is not present]
+21-04-12 20:46:36.474 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 20:46:36.230 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 17892 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 20:46:36.516 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 20:46:36.589 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 20:46:36.592 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 20:46:37.971 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 20:46:37.983 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 20:46:37.986 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 20:46:37.989 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 20:46:38.109 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 20:46:38.111 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1512 ms
+21-04-12 20:46:39.280 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 20:46:39.390 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 20:46:39.563 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78daeaf7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ff7bc2b, org.springframework.security.web.header.HeaderWriterFilter@38957439, org.springframework.security.web.authentication.logout.LogoutFilter@79707f2, com.kayn.auth.JWTAuthenticationFilter@b981812, com.kayn.auth.JWTAuthorizationFilter@46420998, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7374dfda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ffc0495, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64e358e0, org.springframework.security.web.session.SessionManagementFilter@773b27e2, org.springframework.security.web.access.ExceptionTranslationFilter@377fe270, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78e52e0a]
+21-04-12 20:46:39.695 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 20:46:39.982 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 20:46:40.007 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 20:46:40.026 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 20:46:40.041 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.695 seconds (JVM running for 6.171)
+21-04-12 21:47:23.271 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 21:47:22.964 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 18472 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 21:47:23.325 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 21:47:23.397 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 21:47:23.400 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 21:47:24.868 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 21:47:24.881 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 21:47:24.883 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 21:47:24.885 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 21:47:24.989 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 21:47:24.992 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1586 ms
+21-04-12 21:47:26.179 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 21:47:26.299 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 21:47:26.487 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7707c882, org.springframework.security.web.context.SecurityContextPersistenceFilter@72a874b0, org.springframework.security.web.header.HeaderWriterFilter@2970474d, org.springframework.security.web.authentication.logout.LogoutFilter@57e666f6, com.kayn.auth.JWTAuthenticationFilter@52e89333, com.kayn.auth.JWTAuthorizationFilter@2f8c04db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@523d6bad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@419f70ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c2e21ec, org.springframework.security.web.session.SessionManagementFilter@1cc2a5bd, org.springframework.security.web.access.ExceptionTranslationFilter@e174103, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64e8961]
+21-04-12 21:47:26.627 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 21:47:26.929 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 21:47:26.954 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 21:47:26.974 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 21:47:26.989 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.045 seconds (JVM running for 6.633)
+21-04-12 21:51:33.791 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-12 21:51:33.793 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-12 21:51:33.797 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-12 21:51:34.541 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-12 21:51:34.695 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-12 21:51:46.072 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - allGoods:macbook
+21-04-12 21:51:46.075 [http-nio-8888-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'productId' is not present]
+21-04-12 21:51:53.556 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - allGoods:macbook
+21-04-12 21:51:53.558 [http-nio-8888-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'productId' is not present]
+21-04-12 21:54:59.574 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 21:54:59.284 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 13436 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 21:54:59.612 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 21:54:59.680 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 21:54:59.683 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 21:55:01.124 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 21:55:01.137 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 21:55:01.140 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 21:55:01.143 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 21:55:01.245 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 21:55:01.248 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1560 ms
+21-04-12 21:55:02.422 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 21:55:02.530 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 21:55:02.706 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15e0295b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dccd298, org.springframework.security.web.header.HeaderWriterFilter@207ff1c9, org.springframework.security.web.authentication.logout.LogoutFilter@17bc8ecf, com.kayn.auth.JWTAuthenticationFilter@52c7da91, com.kayn.auth.JWTAuthorizationFilter@2ce80752, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdd21ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13921531, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e9bed60, org.springframework.security.web.session.SessionManagementFilter@5fe2414, org.springframework.security.web.access.ExceptionTranslationFilter@52cdd726, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d5fff73]
+21-04-12 21:55:02.833 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 21:55:03.122 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 21:55:03.146 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 21:55:03.167 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 21:55:03.182 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.868 seconds (JVM running for 6.367)
+21-04-12 21:55:34.725 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-12 21:55:34.727 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-12 21:55:34.730 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-12 21:55:35.455 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-12 21:55:35.612 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-12 21:55:35.814 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - productDet:620276079822
+21-04-12 21:56:00.724 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - addCart:MyCart(id=null, username=admin, productId=620276079822, salePrice=39.1, productName=笔记本立式支架macbook pro桌面收纳整理底座支架笔记本电脑竖架, productImg=https://img.alicdn.com/bao/uploaded/i3/1120541927/O1CN01COlcvX1Q6bsnKc8AV_!!0-item_pic.jpg, productNum=1, checked=1)
+21-04-12 21:56:29.738 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - addOrder:OrderDto(userId=null, username=admin, street=南京, tel=4543533, orderTotal=39.1, orderGoodList=[OrderGood(id=null, productId=620276079822, orderId=null, salePrice=39.1, productNum=1, limitNum=null, checked=1, productName=笔记本立式支架macbook pro桌面收纳整理底座支架笔记本电脑竖架, productImg=https://img.alicdn.com/bao/uploaded/i3/1120541927/O1CN01COlcvX1Q6bsnKc8AV_!!0-item_pic.jpg)])
+21-04-12 22:02:04.219 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - payOrder50
+21-04-12 22:57:07.237 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m1s96ms230µs300ns).
+21-04-12 23:18:11.145 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - allGoods:macbook
+21-04-12 23:19:08.351 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - addCart:MyCart(id=null, username=admin, productId=605204820217, salePrice=3358.0, productName=apple /苹果12英寸macbook 256gb, productImg=https://img.alicdn.com/bao/uploaded/i1/193655820/O1CN018Unxse1srbmA9n8bQ_!!0-item_pic.jpg, productNum=1, checked=1)
+21-04-12 23:19:12.837 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - allGoods:macbook
+21-04-12 23:19:15.564 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - productDet:588285764569
+21-04-12 23:19:22.842 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - productDet:618353248027
+21-04-12 23:19:30.168 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - productDet:590959137301
+21-04-12 23:19:42.614 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - productDet:150642571432841
+21-04-12 23:24:55.976 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - productDet:605204820217
+21-04-12 23:25:00.503 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - productDet:522152519839
+21-04-12 23:25:02.066 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - addCart:MyCart(id=null, username=admin, productId=522152519839, salePrice=6980.0, productName=2020新款M1芯片八核 Apple/苹果 MacBook Air 13寸苹果笔记本电脑, productImg=https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN01O0hBYr2BraQ669n8z_!!2647258392.jpg, productNum=1, checked=1)
+21-04-12 23:25:07.139 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - allGoods:what
+21-04-12 23:25:10.215 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - productDet:618343620812
+21-04-12 23:25:18.125 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - productDet:592459361659
+21-04-12 23:29:51.006 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - productDet:592459361659
+21-04-12 23:29:52.750 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - allGoods:macbook
+21-04-12 23:29:58.960 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - allGoods:ds
+21-04-12 23:30:04.749 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - allGoods:iphone
+21-04-12 23:30:34.769 [http-nio-8888-exec-5] INFO  com.kayn.controller.CartController - addCart:MyCart(id=null, username=admin, productId=592459361659, salePrice=36.0, productName=wait what复古水洗做旧棉宽松t恤, productImg=https://img.alicdn.com/bao/uploaded/i1/1919173038/O1CN01x4RGAR1YJRuWHOHzN_!!0-item_pic.jpg, productNum=1, checked=1)
+21-04-12 23:30:38.428 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - addOrder:OrderDto(userId=null, username=admin, street=南京, tel=4543533, orderTotal=7016.0, orderGoodList=[OrderGood(id=null, productId=522152519839, orderId=null, salePrice=6980.0, productNum=1, limitNum=null, checked=1, productName=2020新款M1芯片八核 Apple/苹果 MacBook Air 13寸苹果笔记本电脑, productImg=https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN01O0hBYr2BraQ669n8z_!!2647258392.jpg), OrderGood(id=null, productId=592459361659, orderId=null, salePrice=36.0, productNum=1, limitNum=null, checked=1, productName=wait what复古水洗做旧棉宽松t恤, productImg=https://img.alicdn.com/bao/uploaded/i1/1919173038/O1CN01x4RGAR1YJRuWHOHzN_!!0-item_pic.jpg)])
+21-04-12 23:34:41.072 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - productDet:615896313800
+21-04-12 23:34:43.632 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - addCart:MyCart(id=null, username=admin, productId=615896313800, salePrice=4599.0, productName=国行正品apple iphone11分期手机, productImg=https://img.alicdn.com/bao/uploaded/i4/835499526/O1CN01PAyob22KExazd4QYk_!!0-item_pic.jpg, productNum=1, checked=1)
+21-04-12 23:35:04.000 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - allGoods:iphone
+21-04-12 23:44:36.052 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-12 23:44:35.730 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 23632 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-12 23:44:36.102 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-12 23:44:36.154 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-12 23:44:36.157 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-12 23:44:37.570 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-12 23:44:37.583 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-12 23:44:37.586 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-12 23:44:37.588 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-12 23:44:37.711 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-12 23:44:37.714 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1550 ms
+21-04-12 23:44:39.149 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-12 23:44:39.267 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-12 23:44:39.473 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6540c494, org.springframework.security.web.context.SecurityContextPersistenceFilter@5838ef74, org.springframework.security.web.header.HeaderWriterFilter@6160ea5c, org.springframework.security.web.authentication.logout.LogoutFilter@652a6d99, com.kayn.auth.JWTAuthenticationFilter@475ac8fc, com.kayn.auth.JWTAuthorizationFilter@716abe76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30cd7640, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1808cb87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b48ef25, org.springframework.security.web.session.SessionManagementFilter@765501ab, org.springframework.security.web.access.ExceptionTranslationFilter@3b02e9dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7158bcd8]
+21-04-12 23:44:39.618 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-12 23:44:39.933 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-12 23:44:39.957 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-12 23:44:39.978 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-12 23:44:39.994 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.323 seconds (JVM running for 6.977)
+21-04-12 23:45:18.085 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-12 23:45:18.087 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-12 23:45:18.092 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-12 23:45:18.955 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-12 23:45:19.127 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-12 23:45:23.166 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productDet":"608521702224"}
+21-04-12 23:46:21.294 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productDet":"603342961377"}
+21-04-12 23:46:31.697 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"603342961377","productImg":"https://img.alicdn.com/bao/uploaded/i1/11247811/O1CN01mFGu0227ZUGhLvfqX_!!11247811.jpg","productName":"Apple/苹果 iPhone 11手机iphone11国行原封全新未激活双卡三网","productNum":1,"salePrice":4390.0,"username":"admin"}
+21-04-12 23:46:39.903 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"TF"}
+21-04-12 23:46:42.415 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productDet":"569680538655"}
+21-04-12 23:46:45.235 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"569680538655","productImg":"https://img.alicdn.com/bao/uploaded/i4/1120742123/O1CN011RYNK3OdX74jGQL_!!1120742123.jpg","productName":"清仓价！爆闪 ZIZ单色眼影UD牛郎TF眼影20号替代色space cowboy","productNum":1,"salePrice":17.0,"username":"admin"}
+21-04-12 23:47:02.331 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-12 23:47:07.452 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-12 23:47:13.501 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"TF"}
+21-04-12 23:47:16.555 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"617858001520","productImg":"https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg","productName":"大牌正品韩奈儿tf女不掉色滋润口红","productNum":1,"salePrice":59.0,"username":"admin"}
+21-04-12 23:47:18.069 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"620167183516","productImg":"https://img.alicdn.com/bao/uploaded/i2/3497543880/O1CN017jftqC1eX5PKjpp3L_!!0-item_pic.jpg","productName":"大牌官方tf1516黑管27 80白管07套盒","productNum":1,"salePrice":268.0,"username":"admin"}
+21-04-12 23:47:18.344 [http-nio-8888-exec-2] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"620615187894","productImg":"https://img.alicdn.com/bao/uploaded/i3/1918933495/O1CN019gCLoX1bgkr3GO9W3_!!1918933495.png","productName":"tf正品迷你哑光黑管16 15 80口红","productNum":1,"salePrice":28.0,"username":"admin"}
+21-04-12 23:47:22.238 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"method":"addOrder","data":"{\"orderGoodList\":[{\"checked\":1,\"productId\":615896313800,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i4/835499526/O1CN01PAyob22KExazd4QYk_!!0-item_pic.jpg\",\"productName\":\"国行正品apple iphone11分期手机\",\"productNum\":1,\"salePrice\":4599.0},{\"checked\":1,\"productId\":603342961377,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i1/11247811/O1CN01mFGu0227ZUGhLvfqX_!!11247811.jpg\",\"productName\":\"Apple/苹果 iPhone 11手机iphone11国行原封全新未激活双卡三网\",\"productNum\":1,\"salePrice\":4390.0},{\"checked\":1,\"productId\":569680538655,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i4/1120742123/O1CN011RYNK3OdX74jGQL_!!1120742123.jpg\",\"productName\":\"清仓价！爆闪 ZIZ单色眼影UD牛郎TF眼影20号替代色space cowboy\",\"productNum\":1,\"salePrice\":17.0},{\"checked\":1,\"productId\":617858001520,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg\",\"productName\":\"大牌正品韩奈儿tf女不掉色滋润口红\",\"productNum\":1,\"salePrice\":59.0},{\"checked\":1,\"productId\":620167183516,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/3497543880/O1CN017jftqC1eX5PKjpp3L_!!0-item_pic.jpg\",\"productName\":\"大牌官方tf1516黑管27 80白管07套盒\",\"productNum\":1,\"salePrice\":268.0},{\"checked\":1,\"productId\":620615187894,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/1918933495/O1CN019gCLoX1bgkr3GO9W3_!!1918933495.png\",\"productName\":\"tf正品迷你哑光黑管16 15 80口红\",\"productNum\":1,\"salePrice\":28.0}],\"orderTotal\":9361.0,\"street\":\"南京\",\"tel\":\"4543533\",\"username\":\"admin\"}"}
+21-04-12 23:48:06.934 [http-nio-8888-exec-2] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"577064706240","productImg":"https://img.alicdn.com/bao/uploaded/i4/3383343001/O1CN01GFWML01Y2V6XfNW9c_!!0-item_pic.jpg","productName":"ziz星辰单色眼影粉红人鱼姬tf x15","productNum":1,"salePrice":29.9,"username":"admin"}
+21-04-12 23:48:14.375 [http-nio-8888-exec-7] INFO  com.kayn.controller.OrderController - {"method":"addOrder","data":"{\"orderGoodList\":[{\"checked\":1,\"productId\":577064706240,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i4/3383343001/O1CN01GFWML01Y2V6XfNW9c_!!0-item_pic.jpg\",\"productName\":\"ziz星辰单色眼影粉红人鱼姬tf x15\",\"productNum\":1,\"salePrice\":29.9}],\"orderTotal\":29.9,\"street\":\"南京\",\"tel\":\"4543533\",\"username\":\"admin\"}"}
+21-04-12 23:48:19.295 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - payOrder:53
+21-04-12 23:48:23.782 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - payOrder:51
+21-04-12 23:54:31.618 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productDet":"608521702224"}
+21-04-12 23:54:32.508 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productNum":1,"salePrice":0.0,"username":"admin"}
+21-04-12 23:54:36.279 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"608521702224","productImg":"https://img.alicdn.com/bao/uploaded/i3/387784786/O1CN01OTDDOr1lE2A4nAgoE_!!387784786.jpg","productName":"Apple/苹果 iPhone 8 Plus全新苹果8plus国行正品三网苹果8手机8x","productNum":1,"salePrice":798.0,"username":"admin"}
+21-04-12 23:54:55.902 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-12 23:55:02.318 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productDet":"608521702224"}
+21-04-12 23:55:08.066 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productDet":"608521702224"}
+21-04-12 23:55:11.850 [http-nio-8888-exec-9] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+21-04-12 23:55:20.290 [http-nio-8888-exec-10] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+21-04-12 23:55:33.418 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-12 23:55:36.386 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productDet":"610698943873"}
+21-04-12 23:55:38.566 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"610698943873","productImg":"https://img.alicdn.com/bao/uploaded/i1/56383635/O1CN01bkJ7xf1cisN1JHmO8_!!0-item_pic.jpg","productName":"Apple/苹果 MacBook Pro MF839CH/A13寸笔记本电脑办公本15英寸i7","productNum":1,"salePrice":2688.0,"username":"admin"}
+21-04-13 00:02:45.096 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productDet":"603342961377"}
+21-04-13 00:03:01.677 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productDet":"541025576142"}
+21-04-13 00:03:06.476 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-13 00:03:09.800 [http-nio-8888-exec-1] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"589015183052","productImg":"https://img.alicdn.com/bao/uploaded/i3/193655820/O1CN01r43GjG1srbm75p04u_!!0-item_pic.jpg","productName":"apple /苹果macbook pro设计13寸","productNum":1,"salePrice":4680.0,"username":"zhangsan"}
+21-04-13 00:03:13.297 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"TF"}
+21-04-13 00:03:14.737 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"617858001520","productImg":"https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg","productName":"大牌正品韩奈儿tf女不掉色滋润口红","productNum":1,"salePrice":59.0,"username":"zhangsan"}
+21-04-13 00:03:16.723 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"613353967558","productImg":"https://img.alicdn.com/bao/uploaded/i1/3072604241/O1CN013b5iOY1hCQIuxTeUb_!!3072604241.jpg","productName":"forget sorrow品牌小盘便携眼影盘","productNum":1,"salePrice":28.0,"username":"zhangsan"}
+21-04-13 00:03:17.312 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"605055869683","productImg":"https://img.alicdn.com/bao/uploaded/i2/39882809/O1CN01T3SnyI1WcZ71nZdw5_!!39882809.jpg","productName":"林林同款tf21#last dance 22眼影","productNum":1,"salePrice":35.0,"username":"zhangsan"}
+21-04-13 00:03:43.577 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"method":"addOrder","data":"{\"orderGoodList\":[{\"checked\":1,\"productId\":541025576142,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN015Xqsdi2BraPZb8alx_!!2647258392.jpg\",\"productName\":\"apple /苹果macbook pro笔记本m1\",\"productNum\":1,\"salePrice\":8580.0},{\"checked\":1,\"productId\":541025576142,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN015Xqsdi2BraPZb8alx_!!2647258392.jpg\",\"productName\":\"Apple/苹果 MacBook Pro 苹果笔记本电脑13寸M1芯八核 苹果M1电脑\",\"productNum\":1,\"salePrice\":8580.0},{\"checked\":1,\"productId\":541025576142,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN015Xqsdi2BraPZb8alx_!!2647258392.jpg\",\"productName\":\"Apple/苹果 MacBook Pro 苹果笔记本电脑13寸M1芯八核 苹果M1电脑\",\"productNum\":1,\"salePrice\":8580.0},{\"checked\":1,\"productId\":541025576142,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN015Xqsdi2BraPZb8alx_!!2647258392.jpg\",\"productName\":\"Apple/苹果 MacBook Pro 苹果笔记本电脑13寸M1芯八核 苹果M1电脑\",\"productNum\":1,\"salePrice\":8580.0},{\"checked\":1,\"productId\":541025576142,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/2647258392/O1CN015Xqsdi2BraPZb8alx_!!2647258392.jpg\",\"productName\":\"Apple/苹果 MacBook Pro 苹果笔记本电脑13寸M1芯八核 苹果M1电脑\",\"productNum\":1,\"salePrice\":8580.0},{\"checked\":1,\"productId\":589015183052,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i3/193655820/O1CN01r43GjG1srbm75p04u_!!0-item_pic.jpg\",\"productName\":\"apple /苹果macbook pro设计13寸\",\"productNum\":1,\"salePrice\":4680.0},{\"checked\":1,\"productId\":617858001520,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg\",\"productName\":\"大牌正品韩奈儿tf女不掉色滋润口红\",\"productNum\":1,\"salePrice\":59.0},{\"checked\":1,\"productId\":613353967558,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i1/3072604241/O1CN013b5iOY1hCQIuxTeUb_!!3072604241.jpg\",\"productName\":\"forget sorrow品牌小盘便携眼影盘\",\"productNum\":1,\"salePrice\":28.0},{\"checked\":1,\"productId\":605055869683,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/39882809/O1CN01T3SnyI1WcZ71nZdw5_!!39882809.jpg\",\"productName\":\"林林同款tf21#last dance 22眼影\",\"productNum\":1,\"salePrice\":35.0}],\"orderTotal\":47702.0,\"street\":\"江苏南京\",\"tel\":\"2787267267\",\"username\":\"zhangsan\"}"}
+21-04-13 00:03:53.998 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-13 00:03:56.677 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productDet":"592684766215"}
+21-04-13 03:09:46.092 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h26s505ms913µs).
+21-04-13 09:51:31.960 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h41m49s670ms612µs800ns).
+21-04-13 09:54:13.581 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productDet":"564343960735"}
+21-04-13 09:54:17.628 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-13 09:54:23.371 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-13 09:54:28.014 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"macbook"}
+21-04-13 09:54:34.359 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productDet":"548318824408"}
+21-04-13 10:03:38.042 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productDet":"610974675379"}
+21-04-13 10:03:45.834 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"aj"}
+21-04-13 10:03:48.969 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productDet":"585760285668"}
+21-04-13 10:03:49.981 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"585760285668","productImg":"https://img.alicdn.com/bao/uploaded/i2/2454203082/O1CN01OhIEZb1YdbAQgw5Ao_!!0-item_pic.jpg","productName":"aj男鞋空军一号莆田2021夏季潮牌增高鸳鸯高帮篮球运动鞋子男潮鞋","productNum":1,"salePrice":158.0,"username":"zhangsan"}
+21-04-13 10:03:53.844 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"method":"addOrder","data":"{\"orderGoodList\":[{\"checked\":1,\"productId\":585760285668,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/2454203082/O1CN01OhIEZb1YdbAQgw5Ao_!!0-item_pic.jpg\",\"productName\":\"aj男鞋空军一号莆田2021夏季潮牌增高鸳鸯高帮篮球运动鞋子男潮鞋\",\"productNum\":1,\"salePrice\":158.0}],\"orderTotal\":158.0,\"street\":\"江苏南京\",\"tel\":\"2787267267\",\"username\":\"zhangsan\"}"}
+21-04-13 10:04:05.166 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - payOrder:55
+21-04-13 10:24:15.649 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s371ms829µs800ns).
+21-04-13 10:26:04.360 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productDet":"548318824408"}
+21-04-13 10:26:27.592 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9.mshome.net/172.18.144.1:9092) could not be established. Broker may not be available.
+21-04-13 10:27:00.195 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"aj"}
+21-04-13 10:27:05.116 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productDet":"613380690434"}
+21-04-13 10:30:41.293 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productDet":"613380690434"}
+21-04-13 10:30:46.562 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"613380690434","productImg":"https://img.alicdn.com/bao/uploaded/i1/2200786123435/O1CN01eflqd61bFH8DvtW75_!!0-item_pic.jpg","productName":"aj1男鞋2021新款春季运动休闲百搭潮鞋空军一号篮球高帮情侣板鞋","productNum":1,"salePrice":178.0,"username":"zhangsan"}
+21-04-13 10:30:49.733 [http-nio-8888-exec-1] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"601366482396","productImg":"https://img.alicdn.com/bao/uploaded/i4/2453259560/O1CN01U4Xzfi2KUWwbl5wY5_!!0-item_pic.jpg","productName":"aj白色高帮鞋男生夏季莆田运动鞋","productNum":1,"salePrice":158.0,"username":"zhangsan"}
+21-04-13 10:30:54.220 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"aj"}
+21-04-13 10:30:57.082 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"aj"}
+21-04-13 10:30:59.920 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"560039753093","productImg":"https://img.alicdn.com/bao/uploaded/i2/2453259560/O1CN012KUWqy14ofGn03r_!!0-item_pic.jpg","productName":"气垫2021新款春季网红夏季鞋aj男鞋","productNum":1,"salePrice":138.0,"username":"zhangsan"}
+21-04-13 10:31:08.341 [http-nio-8888-exec-5] INFO  com.kayn.controller.OrderController - {"method":"addOrder","data":"{\"orderGoodList\":[{\"checked\":1,\"productId\":613380690434,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i1/2200786123435/O1CN01eflqd61bFH8DvtW75_!!0-item_pic.jpg\",\"productName\":\"aj1男鞋2021新款春季运动休闲百搭潮鞋空军一号篮球高帮情侣板鞋\",\"productNum\":1,\"salePrice\":178.0},{\"checked\":1,\"productId\":601366482396,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i4/2453259560/O1CN01U4Xzfi2KUWwbl5wY5_!!0-item_pic.jpg\",\"productName\":\"aj白色高帮鞋男生夏季莆田运动鞋\",\"productNum\":1,\"salePrice\":158.0},{\"checked\":1,\"productId\":560039753093,\"productImg\":\"https://img.alicdn.com/bao/uploaded/i2/2453259560/O1CN012KUWqy14ofGn03r_!!0-item_pic.jpg\",\"productName\":\"气垫2021新款春季网红夏季鞋aj男鞋\",\"productNum\":1,\"salePrice\":138.0}],\"orderTotal\":474.0,\"street\":\"江苏南京\",\"tel\":\"2787267267\",\"username\":\"zhangsan\"}"}
+21-04-13 10:31:12.825 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - payOrder:56
+21-04-13 11:06:33.621 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 11:06:33.327 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 17856 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 11:06:33.669 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 11:06:33.723 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 11:06:33.727 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 11:06:35.189 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 11:06:35.202 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 11:06:35.205 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 11:06:35.207 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 11:06:35.322 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 11:06:35.324 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1591 ms
+21-04-13 11:06:36.492 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 11:06:36.602 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 11:06:36.776 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a9299b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7db4056a, org.springframework.security.web.header.HeaderWriterFilter@7343901f, org.springframework.security.web.authentication.logout.LogoutFilter@81334c2, com.kayn.auth.JWTAuthenticationFilter@2f8bcffa, com.kayn.auth.JWTAuthorizationFilter@12375038, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43a36ed7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54cb6b12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69903058, org.springframework.security.web.session.SessionManagementFilter@5d2e073b, org.springframework.security.web.access.ExceptionTranslationFilter@50988757, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@794f05cc]
+21-04-13 11:06:36.906 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 11:06:37.209 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 11:06:37.232 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 11:06:37.265 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 11:06:37.279 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.911 seconds (JVM running for 6.426)
+21-04-13 11:17:23.542 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 11:17:23.547 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 11:17:23.551 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 11:17:24.345 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 11:17:24.513 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 11:17:47.888 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:17:58.238 [http-nio-8888-exec-7] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"570682824091","productImg":"https://img.alicdn.com/bao/uploaded/i1/2211264479/O1CN01NdkJOu1ixQcVmEQvI_!!0-item_pic.jpg","productName":"笔记本台式联想苹果戴尔华硕防窥屏","productNum":1,"salePrice":16.8,"username":"zhangsan"}
+21-04-13 11:17:59.200 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"600044906961","productImg":"https://img.alicdn.com/bao/uploaded/i4/260551428/O1CN01Iotcu21MQ48Fo5QvC_!!260551428.jpg","productName":"头戴式苹果imac一体机带麦克风耳麦","productNum":1,"salePrice":38.0,"username":"zhangsan"}
+21-04-13 11:18:03.130 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":570682824091,"productImg":"https://img.alicdn.com/bao/uploaded/i1/2211264479/O1CN01NdkJOu1ixQcVmEQvI_!!0-item_pic.jpg","productName":"笔记本台式联想苹果戴尔华硕防窥屏","productNum":1,"salePrice":16.8},{"checked":1,"productId":600044906961,"productImg":"https://img.alicdn.com/bao/uploaded/i4/260551428/O1CN01Iotcu21MQ48Fo5QvC_!!260551428.jpg","productName":"头戴式苹果imac一体机带麦克风耳麦","productNum":1,"salePrice":38.0}],"orderTotal":54.8,"street":"江苏南京","tel":"2787267267","username":"zhangsan"}
+21-04-13 11:18:07.794 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - payOrder:57
+21-04-13 11:24:17.710 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:33:43.786 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:33:47.833 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productDet":"619739723926"}
+21-04-13 11:34:14.167 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:34:24.417 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:34:39.352 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:34:45.779 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {}
+21-04-13 11:34:52.699 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productDet":"618190794713"}
+21-04-13 11:35:00.057 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"618190794713","productImg":"https://img.alicdn.com/bao/uploaded/i1/4005899547/O1CN01IcJBZ82KOZqc8uVDc_!!0-item_pic.jpg","productName":"正品大牌迪奥拉口红520情人礼物999防水滋润不掉色888哑光礼盒装","productNum":1,"salePrice":158.0,"username":"zhangsan"}
+21-04-13 11:35:09.159 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"618466641223","productImg":"https://img.alicdn.com/bao/uploaded/i4/401157956/O1CN01MMuGZl28dtlkDWtuH_!!401157956.jpg","productName":"包邮迪奥亚菲中国风故宫雕花口红","productNum":1,"salePrice":119.0,"username":"zhangsan"}
+21-04-13 11:35:10.384 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"606494690180","productImg":"https://img.alicdn.com/bao/uploaded/i3/2200573960749/O1CN01SkvIdE1HP5DdlX7V8_!!2200573960749.jpg","productName":"官方正品凯诺迪奥口红999哑光礼盒","productNum":1,"salePrice":119.0,"username":"zhangsan"}
+21-04-13 11:35:22.180 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":618190794713,"productImg":"https://img.alicdn.com/bao/uploaded/i1/4005899547/O1CN01IcJBZ82KOZqc8uVDc_!!0-item_pic.jpg","productName":"正品大牌迪奥拉口红520情人礼物999防水滋润不掉色888哑光礼盒装","productNum":1,"salePrice":158.0},{"checked":1,"productId":618466641223,"productImg":"https://img.alicdn.com/bao/uploaded/i4/401157956/O1CN01MMuGZl28dtlkDWtuH_!!401157956.jpg","productName":"包邮迪奥亚菲中国风故宫雕花口红","productNum":1,"salePrice":119.0},{"checked":1,"productId":606494690180,"productImg":"https://img.alicdn.com/bao/uploaded/i3/2200573960749/O1CN01SkvIdE1HP5DdlX7V8_!!2200573960749.jpg","productName":"官方正品凯诺迪奥口红999哑光礼盒","productNum":1,"salePrice":119.0}],"orderTotal":396.0,"street":"江苏南京","tel":"2787267267","username":"zhangsan"}
+21-04-13 11:35:36.969 [http-nio-8888-exec-5] INFO  com.kayn.controller.OrderController - payOrder:58
+21-04-13 11:43:16.205 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 11:43:15.935 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 14800 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 11:43:16.247 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 11:43:16.316 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 11:43:16.319 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 11:43:17.722 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 11:43:17.733 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 11:43:17.736 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 11:43:17.739 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 11:43:17.848 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 11:43:17.851 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
+21-04-13 11:43:19.037 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 11:43:19.148 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 11:43:19.331 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a3edf19, org.springframework.security.web.context.SecurityContextPersistenceFilter@11c0ac7e, org.springframework.security.web.header.HeaderWriterFilter@7649004b, org.springframework.security.web.authentication.logout.LogoutFilter@5cbfc421, com.kayn.auth.JWTAuthenticationFilter@f2f93ae, com.kayn.auth.JWTAuthorizationFilter@4d95a52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bde5357, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d6237df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f6d5936, org.springframework.security.web.session.SessionManagementFilter@3b1f2916, org.springframework.security.web.access.ExceptionTranslationFilter@73fe2b31, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43d5648c]
+21-04-13 11:43:19.458 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 11:43:19.764 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 11:43:19.787 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 11:43:19.808 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 11:43:19.823 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.935 seconds (JVM running for 6.492)
+21-04-13 11:43:54.640 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 11:43:54.642 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 11:43:54.647 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 11:43:55.472 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 11:43:55.634 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 11:43:58.658 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"564343960735","productImg":"https://img.alicdn.com/bao/uploaded/i1/193655820/O1CN01F1TkhT1srbm5pyUu8_!!0-item_pic.jpg","productName":"apple /苹果macbook air超薄便携","productNum":1,"salePrice":1998.0,"username":"zhangsan"}
+21-04-13 11:44:03.614 [http-nio-8888-exec-1] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":564343960735,"productImg":"https://img.alicdn.com/bao/uploaded/i1/193655820/O1CN01F1TkhT1srbm5pyUu8_!!0-item_pic.jpg","productName":"apple /苹果macbook air超薄便携","productNum":1,"salePrice":1998.0}],"orderTotal":1998.0,"street":"江苏南京","tel":"2787267267","username":"zhangsan"}
+21-04-13 11:44:06.169 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"orderId":"59"}
+21-04-13 11:59:59.484 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 11:59:59.191 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 23956 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 11:59:59.538 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 11:59:59.606 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 11:59:59.609 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 12:00:01.207 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 12:00:01.220 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 12:00:01.224 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 12:00:01.227 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 12:00:01.373 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 12:00:01.376 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1761 ms
+21-04-13 12:00:02.618 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 12:00:02.730 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 12:00:02.930 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@532be4e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@247e41e1, org.springframework.security.web.header.HeaderWriterFilter@3db0252f, org.springframework.security.web.authentication.logout.LogoutFilter@5f3c33db, com.kayn.auth.JWTAuthenticationFilter@72eeaede, com.kayn.auth.JWTAuthorizationFilter@152ce411, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5298c74e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@efedc7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e8c87dc, org.springframework.security.web.session.SessionManagementFilter@1bdd1f0b, org.springframework.security.web.access.ExceptionTranslationFilter@1d2ec9e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f608e00]
+21-04-13 12:00:03.078 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 12:00:03.463 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 12:00:03.488 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 12:00:03.510 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 12:00:03.526 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.393 seconds (JVM running for 7.133)
+21-04-13 12:02:28.750 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 12:02:28.753 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 12:02:28.757 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-13 12:02:29.499 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 12:02:29.651 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 12:02:30.266 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"zhangsan"}
+21-04-13 12:02:44.280 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫","username":"zhangsan"}
+21-04-13 12:02:55.165 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 12:03:05.398 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 12:03:19.197 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 12:03:26.082 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productDet":"599678627841","username":""}
+21-04-13 12:03:44.797 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"599678627841","productImg":"https://img.alicdn.com/bao/uploaded/i4/2201205336193/O1CN01JX8QVZ1vcRVLRX85T_!!0-item_pic.jpg","productName":"GRKC中国扎染创世纪长袖T恤国潮牌嘻哈情侣宽松卫衣男女款新疆棉","productNum":1,"salePrice":199.0,"username":"zhangsan"}
+21-04-13 12:03:48.773 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":599678627841,"productImg":"https://img.alicdn.com/bao/uploaded/i4/2201205336193/O1CN01JX8QVZ1vcRVLRX85T_!!0-item_pic.jpg","productName":"GRKC中国扎染创世纪长袖T恤国潮牌嘻哈情侣宽松卫衣男女款新疆棉","productNum":1,"salePrice":199.0}],"orderTotal":199.0,"street":"江苏南京","tel":"2787267267","username":"zhangsan"}
+21-04-13 12:03:52.624 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderId":"60","username":"zhangsan"}
+21-04-13 12:10:57.959 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productDet":"585410181009","username":""}
+21-04-13 12:11:02.758 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 12:11:08.602 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productDet":"603190007156","username":""}
+21-04-13 12:11:16.583 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 12:11:22.030 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productDet":"609870570447","username":""}
+21-04-13 12:11:29.449 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productDet":"609870570447","username":""}
+21-04-13 12:13:30.730 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productDet":"609870570447","username":""}
+21-04-13 12:14:40.720 [http-nio-8888-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+21-04-13 12:14:47.853 [http-nio-8888-exec-4] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+21-04-13 12:16:16.716 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 12:16:16.440 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 21224 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 12:16:16.774 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 12:16:16.842 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 12:16:16.845 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 12:16:18.331 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 12:16:18.344 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 12:16:18.347 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 12:16:18.349 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 12:16:18.451 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 12:16:18.455 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1605 ms
+21-04-13 12:16:19.643 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 12:16:19.774 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 12:16:20.004 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@493afe04, org.springframework.security.web.context.SecurityContextPersistenceFilter@37f86214, org.springframework.security.web.header.HeaderWriterFilter@74957f95, org.springframework.security.web.authentication.logout.LogoutFilter@2e9e7c77, com.kayn.auth.JWTAuthenticationFilter@3b02e8d4, com.kayn.auth.JWTAuthorizationFilter@2e4805b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2074b091, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e1de3c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49de124a, org.springframework.security.web.session.SessionManagementFilter@6bdf1aae, org.springframework.security.web.access.ExceptionTranslationFilter@4a771401, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@efa24f2]
+21-04-13 12:16:20.174 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 12:16:20.518 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 12:16:20.545 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 12:16:20.568 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 12:16:20.583 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.093 seconds (JVM running for 6.834)
+21-04-13 12:18:45.300 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 12:18:45.304 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 12:18:45.309 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 12:18:46.231 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 12:18:46.418 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 12:18:46.690 [http-nio-8888-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+21-04-13 12:19:44.574 [http-nio-8888-exec-5] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+21-04-13 12:20:12.133 [http-nio-8888-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+21-04-13 12:23:17.656 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 12:23:17.355 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 26108 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 12:23:17.717 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 12:23:17.782 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 12:23:17.785 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 12:23:19.192 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 12:23:19.203 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 12:23:19.206 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 12:23:19.209 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 12:23:19.321 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 12:23:19.324 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1535 ms
+21-04-13 12:23:20.541 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 12:23:20.653 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 12:23:20.838 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f8b9647, org.springframework.security.web.context.SecurityContextPersistenceFilter@584c89dd, org.springframework.security.web.header.HeaderWriterFilter@10299ca8, org.springframework.security.web.authentication.logout.LogoutFilter@89bfeb4, com.kayn.auth.JWTAuthenticationFilter@3da291, com.kayn.auth.JWTAuthorizationFilter@1bfd1f0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11dc3b30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e75325, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@625f4177, org.springframework.security.web.session.SessionManagementFilter@34cfa4a4, org.springframework.security.web.access.ExceptionTranslationFilter@292686b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62886c31]
+21-04-13 12:23:20.972 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 12:23:21.277 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 12:23:21.300 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 12:23:21.320 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 12:23:21.336 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.98 seconds (JVM running for 6.598)
+21-04-13 12:23:28.691 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 12:23:28.694 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 12:23:28.698 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 12:23:29.665 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 12:23:29.876 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 12:23:30.226 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 12:24:17.248 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 12:24:45.197 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 12:25:16.685 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 13:09:57.172 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 13:14:48.746 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"609870570447","username":""}
+21-04-13 13:14:56.251 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"情侣卫衣","username":"zhangsan"}
+21-04-13 13:14:59.937 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:15:05.551 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:15:19.610 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"602114725801","productImg":"https://img.alicdn.com/bao/uploaded/i3/544323876/O1CN012awVFq1eVFiW4XqTz_!!544323876.jpg","productName":"BJHG自制 春抓绒加厚开衫连帽卫衣男国潮INS宽松情侣运动拉链外套","productNum":1,"salePrice":136.0,"username":"zhangsan"}
+21-04-13 13:18:08.042 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:18:11.970 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:18:37.562 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:18:45.698 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":""}
+21-04-13 13:20:28.164 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":"zhangsan"}
+21-04-13 13:21:45.871 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"zhangsan"}
+21-04-13 13:26:48.580 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productId":"602114725801","username":"zhangsan"}
+21-04-13 13:26:52.446 [http-nio-8888-exec-7] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":602114725801,"productImg":"https://img.alicdn.com/bao/uploaded/i3/544323876/O1CN012awVFq1eVFiW4XqTz_!!544323876.jpg","productName":"BJHG自制 春抓绒加厚开衫连帽卫衣男国潮INS宽松情侣运动拉链外套","productNum":1,"salePrice":136.0}],"orderTotal":136.0,"street":"江苏南京","tel":"2787267267","username":"zhangsan"}
+21-04-13 13:26:56.038 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderId":"61","username":"zhangsan"}
+21-04-13 13:39:22.906 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 13:39:22.627 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 23760 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 13:39:22.948 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 13:39:23.004 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 13:39:23.007 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 13:39:24.680 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 13:39:24.695 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 13:39:24.698 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 13:39:24.701 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 13:39:24.896 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 13:39:24.899 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1887 ms
+21-04-13 13:39:26.966 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 13:39:27.160 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 13:39:27.381 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a759e08, org.springframework.security.web.context.SecurityContextPersistenceFilter@218d8128, org.springframework.security.web.header.HeaderWriterFilter@19f72a33, org.springframework.security.web.authentication.logout.LogoutFilter@4278460e, com.kayn.auth.JWTAuthenticationFilter@2447b0dd, com.kayn.auth.JWTAuthorizationFilter@23a5bffe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b768d50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@602825ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7431c5a1, org.springframework.security.web.session.SessionManagementFilter@7701928, org.springframework.security.web.access.ExceptionTranslationFilter@3960c391, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@383488b2]
+21-04-13 13:39:27.522 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 13:39:28.005 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 13:39:28.037 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 13:39:28.086 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 13:39:28.109 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 6.554 seconds (JVM running for 8.133)
+21-04-13 13:39:40.689 [http-nio-8888-exec-4] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 13:39:40.692 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 13:39:40.696 [http-nio-8888-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 13:39:41.656 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 13:39:41.853 [http-nio-8888-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 13:41:14.941 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"zhangsan"}
+21-04-13 14:25:42.075 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m59s704ms26µs).
+21-04-13 14:28:10.633 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[?:1.8.0_201]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:11.014 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:11.246 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:11.671 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:12.522 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:13.378 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:14.495 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:15.435 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:16.310 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:17.246 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:18.358 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:19.399 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 14:28:20.375 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Error connecting to node DESKTOP-T20LVA9.mshome.net:9092 (id: 0 rack: null)
+java.net.UnknownHostException: DESKTOP-T20LVA9.mshome.net
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[?:1.8.0_201]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[?:1.8.0_201]
+	at org.apache.kafka.clients.ClientUtils.resolve(ClientUtils.java:110) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.currentAddress(ClusterConnectionStates.java:403) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates$NodeConnectionState.access$200(ClusterConnectionStates.java:363) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.ClusterConnectionStates.currentAddress(ClusterConnectionStates.java:151) ~[kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.initiateConnect(NetworkClient.java:958) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.access$600(NetworkClient.java:74) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1131) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.maybeUpdate(NetworkClient.java:1019) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:542) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:325) [kafka-clients-2.6.0.jar:?]
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:240) [kafka-clients-2.6.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+21-04-13 15:36:56.806 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 15:36:56.296 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 25388 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 15:36:56.925 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 15:36:57.074 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 15:36:57.081 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 15:36:59.645 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 15:36:59.675 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 15:36:59.680 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 15:36:59.685 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 15:36:59.916 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 15:36:59.920 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2830 ms
+21-04-13 15:37:02.322 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 15:37:02.494 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 15:37:02.807 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d5da87a, org.springframework.security.web.context.SecurityContextPersistenceFilter@55947d57, org.springframework.security.web.header.HeaderWriterFilter@55959b1e, org.springframework.security.web.authentication.logout.LogoutFilter@f782c9f, com.kayn.auth.JWTAuthenticationFilter@4db21e4f, com.kayn.auth.JWTAuthorizationFilter@7c2d9c54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cb5b805, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@494a0cf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38392f3a, org.springframework.security.web.session.SessionManagementFilter@54c82ace, org.springframework.security.web.access.ExceptionTranslationFilter@43a9c2bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78ea5303]
+21-04-13 15:37:03.066 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 15:37:03.578 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 15:37:03.617 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 15:37:03.673 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 15:37:03.697 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 9.232 seconds (JVM running for 12.243)
+21-04-13 15:37:20.003 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 15:37:20.007 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 15:37:20.017 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+21-04-13 15:37:21.572 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 15:37:21.899 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 15:39:03.672 [http-nio-8888-exec-7] ERROR com.kayn.auth.JWTAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 用户不存在
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at com.kayn.auth.JWTAuthenticationFilter.attemptAuthentication(JWTAuthenticationFilter.java:48) ~[classes/:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: java.lang.RuntimeException: 用户不存在
+	at com.kayn.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:38) ~[classes/:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.5.jar:5.4.5]
+	... 53 more
+21-04-13 15:39:37.609 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liusijia"}
+21-04-13 15:39:46.780 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"liusijia"}
+21-04-13 15:39:51.893 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"liusijia"}
+21-04-13 15:39:55.045 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"639970899752","productImg":"https://img.alicdn.com/bao/uploaded/i3/1727386213/O1CN018LR5jx1vlbQ9JgHDh_!!1727386213.jpg","productName":"tf四色眼部南瓜色便携哑光眼影盘","productNum":1,"salePrice":2429.0,"username":"liusijia"}
+21-04-13 15:39:55.338 [http-nio-8888-exec-1] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"638929820103","productImg":"https://img.alicdn.com/bao/uploaded/i4/1727386213/O1CN01LaFNav1vlbQA9zwk7_!!1727386213.jpg","productName":"{}","productNum":1,"salePrice":2269.0,"username":"liusijia"}
+21-04-13 15:39:56.430 [http-nio-8888-exec-2] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"636305101126","productImg":"https://img.alicdn.com/bao/uploaded/i3/2210064197764/O1CN01NIkHMs27Dxi3v29te_!!2210064197764.jpg","productName":"日本wh大牌正品tf黑管08姨妈色礼物","productNum":1,"salePrice":2229.5,"username":"liusijia"}
+21-04-13 15:40:05.059 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"642116155521","productImg":"https://img.alicdn.com/bao/uploaded/i4/305706323/O1CN01amggsW1wZyzmSmvYn_!!305706323.jpg","productName":"清日期不好tf四色芯眼影盘","productNum":1,"salePrice":999.0,"username":"liusijia"}
+21-04-13 15:40:08.511 [http-nio-8888-exec-5] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"640820055640","productImg":"https://img.alicdn.com/bao/uploaded/i3/2209664278406/O1CN017MjoXY2Bxzzsquk3M_!!2209664278406.png","productName":"【铁男专享】tf奶油滋润16黑金口红","productNum":1,"salePrice":480.0,"username":"liusijia"}
+21-04-13 15:41:02.296 [http-nio-8888-exec-2] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":639970899752,"productImg":"https://img.alicdn.com/bao/uploaded/i3/1727386213/O1CN018LR5jx1vlbQ9JgHDh_!!1727386213.jpg","productName":"tf四色眼部南瓜色便携哑光眼影盘","productNum":1,"salePrice":2429.0},{"checked":1,"productId":638929820103,"productImg":"https://img.alicdn.com/bao/uploaded/i4/1727386213/O1CN01LaFNav1vlbQA9zwk7_!!1727386213.jpg","productName":"{}","productNum":1,"salePrice":2269.0},{"checked":1,"productId":636305101126,"productImg":"https://img.alicdn.com/bao/uploaded/i3/2210064197764/O1CN01NIkHMs27Dxi3v29te_!!2210064197764.jpg","productName":"日本wh大牌正品tf黑管08姨妈色礼物","productNum":1,"salePrice":2229.5},{"checked":1,"productId":642116155521,"productImg":"https://img.alicdn.com/bao/uploaded/i4/305706323/O1CN01amggsW1wZyzmSmvYn_!!305706323.jpg","productName":"清日期不好tf四色芯眼影盘","productNum":1,"salePrice":999.0},{"checked":1,"productId":640820055640,"productImg":"https://img.alicdn.com/bao/uploaded/i3/2209664278406/O1CN017MjoXY2Bxzzsquk3M_!!2209664278406.png","productName":"【铁男专享】tf奶油滋润16黑金口红","productNum":1,"salePrice":480.0}],"orderTotal":8406.5,"street":"江苏南京江宁区东渡国际青年城5-805","tel":"15150006826","username":"liusijia"}
+21-04-13 16:04:13.507 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9.mshome.net/172.18.144.1:9092) could not be established. Broker may not be available.
+21-04-13 16:03:58.995 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m6s764ms307µs100ns).
+21-04-13 16:20:14.100 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m30s394ms323µs500ns).
+21-04-13 20:01:54.821 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-13 20:01:54.358 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 14752 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-13 20:01:54.921 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-13 20:01:55.031 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-13 20:01:55.035 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-13 20:01:57.687 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-13 20:01:57.711 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-13 20:01:57.716 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-13 20:01:57.721 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-13 20:01:57.983 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-13 20:01:57.987 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2945 ms
+21-04-13 20:01:59.965 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-13 20:02:00.142 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-13 20:02:00.463 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e135ea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1deee687, org.springframework.security.web.header.HeaderWriterFilter@2dcbc1b3, org.springframework.security.web.authentication.logout.LogoutFilter@18f1b367, com.kayn.auth.JWTAuthenticationFilter@aca37d4, com.kayn.auth.JWTAuthorizationFilter@5175d787, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49f35b43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@237ae814, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@755bf9ea, org.springframework.security.web.session.SessionManagementFilter@79331f04, org.springframework.security.web.access.ExceptionTranslationFilter@4bfdde1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@317ea687]
+21-04-13 20:02:00.697 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-13 20:02:01.154 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-13 20:02:01.192 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-13 20:02:01.222 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-13 20:02:01.248 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 8.348 seconds (JVM running for 10.833)
+21-04-13 20:05:31.809 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-13 20:05:31.812 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-13 20:05:31.818 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-13 20:05:33.121 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-13 20:05:33.436 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-13 20:05:37.044 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liusijia"}
+21-04-13 20:05:56.733 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"liusijia"}
+21-04-13 20:06:09.661 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"眼影","username":"liusijia"}
+21-04-13 20:06:50.104 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"599689835119","username":"liusijia"}
+21-04-13 20:07:04.391 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productId":"606439496523","username":"liusijia"}
+21-04-13 20:07:10.489 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"606439496523","productImg":"https://img.alicdn.com/bao/uploaded/i2/2200553720798/O1CN01zgY6Xb1HlWczcMUzH_!!2200553720798.jpg","productName":"xuxu许愿系列闪粉珠光防水眼影盘","productNum":1,"salePrice":30.4,"username":"liusijia"}
+21-04-13 20:07:38.263 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderGoodList":[{"checked":1,"productId":606439496523,"productImg":"https://img.alicdn.com/bao/uploaded/i2/2200553720798/O1CN01zgY6Xb1HlWczcMUzH_!!2200553720798.jpg","productName":"xuxu许愿系列闪粉珠光防水眼影盘","productNum":1,"salePrice":30.4}],"orderTotal":30.4,"street":"江苏南京江宁区东渡国际青年城5-805","tel":"15150006826","username":"liusijia"}
+21-04-13 20:07:43.899 [http-nio-8888-exec-7] INFO  com.kayn.controller.OrderController - {"orderId":"62","username":"liusijia"}
+21-04-13 20:07:55.339 [http-nio-8888-exec-1] INFO  com.kayn.controller.OrderController - {"orderId":"63","username":"liusijia"}
+21-04-14 14:55:27.924 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-14 14:55:27.468 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 13228 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-14 14:55:27.983 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-14 14:55:28.046 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-14 14:55:28.048 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-14 14:55:29.762 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-14 14:55:29.777 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-14 14:55:29.779 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-14 14:55:29.782 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-14 14:55:29.898 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-14 14:55:29.901 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1850 ms
+21-04-14 14:55:30.987 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-14 14:55:31.095 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-14 14:55:31.350 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d3e287f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5bfcbc6, org.springframework.security.web.header.HeaderWriterFilter@4b9bb3b8, org.springframework.security.web.authentication.logout.LogoutFilter@66bb4850, com.kayn.auth.JWTAuthenticationFilter@183dbaad, com.kayn.auth.JWTAuthorizationFilter@e4bcf5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1db3f117, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6944604c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ba28100, org.springframework.security.web.session.SessionManagementFilter@240af02c, org.springframework.security.web.access.ExceptionTranslationFilter@edcf592, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3102f218]
+21-04-14 14:55:31.507 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-14 14:55:31.848 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-14 14:55:31.874 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-14 14:55:31.912 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-14 14:55:31.927 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.828 seconds (JVM running for 7.674)
+21-04-14 14:56:25.393 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-14 14:56:25.094 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 19300 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-14 14:56:25.445 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-14 14:56:25.523 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-14 14:56:25.527 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-14 14:56:27.021 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-14 14:56:27.033 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-14 14:56:27.035 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-14 14:56:27.037 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-14 14:56:27.149 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-14 14:56:27.152 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1617 ms
+21-04-14 14:56:28.173 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-14 14:56:28.288 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-14 14:56:28.459 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b588570, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d959389, org.springframework.security.web.header.HeaderWriterFilter@7d78993c, org.springframework.security.web.authentication.logout.LogoutFilter@64e8961, com.kayn.auth.JWTAuthenticationFilter@645bc74c, com.kayn.auth.JWTAuthorizationFilter@46a901a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b2a6498, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a9693fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@689c9d2d, org.springframework.security.web.session.SessionManagementFilter@4ca849e3, org.springframework.security.web.access.ExceptionTranslationFilter@7574371, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a6af68b]
+21-04-14 14:56:28.587 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-14 14:56:28.889 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-14 14:56:28.912 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-14 14:56:28.931 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-14 14:56:28.945 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.952 seconds (JVM running for 6.468)
+21-04-14 14:57:18.906 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-14 14:57:18.909 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-14 14:57:18.913 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-14 14:57:19.638 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-14 14:57:19.808 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-14 14:57:53.072 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liusijia"}
+21-04-14 14:58:00.610 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liusijia"}
+21-04-14 14:58:04.673 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"589015183052","productImg":"https://img.alicdn.com/bao/uploaded/i3/193655820/O1CN01r43GjG1srbm75p04u_!!0-item_pic.jpg","productName":"apple /苹果macbook pro设计13寸","productNum":1,"salePrice":4680.0,"username":"liusijia"}
+21-04-14 14:59:01.099 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=589015183052, orderId=null, salePrice=4680.0, productNum=1, limitNum=null, checked=1, productName=apple /苹果macbook pro设计13寸, productImg=https://img.alicdn.com/bao/uploaded/i3/193655820/O1CN01r43GjG1srbm75p04u_!!0-item_pic.jpg)]","street":"江苏南京江宁区东渡国际青年城5-805","tel":"15150006826","orderTotal":"4680.0","username":"liusijia"}
+21-04-14 14:59:04.690 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderId":"64","orderTotal":"4680.0","username":"liusijia"}
+21-04-14 15:00:03.610 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"卫衣","username":"liusijia"}
+21-04-14 15:00:06.718 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"卫衣","username":"liusijia"}
+21-04-14 15:00:08.588 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"卫衣","username":"liusijia"}
+21-04-14 15:00:25.185 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liusijia"}
+21-04-14 15:00:27.715 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"卫衣","username":"liusijia"}
+21-04-14 15:04:43.140 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"586567841557","username":"liusijia"}
+21-04-14 15:04:56.545 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"583205110824","username":"liusijia"}
+21-04-14 15:05:26.659 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"588485279544","username":"liusijia"}
+21-04-14 15:05:40.371 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫","username":"liusijia"}
+21-04-14 15:06:09.942 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫","username":"liusijia"}
+21-04-14 15:06:22.819 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"599059153013","username":"liusijia"}
+21-04-14 15:06:29.467 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫 卫衣","username":"liusijia"}
+21-04-14 15:06:36.102 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫 卫衣","username":"liusijia"}
+21-04-14 15:06:43.157 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"600357883132","username":"liusijia"}
+21-04-14 15:07:06.520 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫 卫衣","username":"liusijia"}
+21-04-14 15:07:26.783 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productId":"563570156147","username":"liusijia"}
+21-04-14 15:07:32.798 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"623787786925","username":"liusijia"}
+21-04-14 15:07:37.203 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"635637704960","username":"liusijia"}
+21-04-14 15:07:38.649 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"情侣衫 卫衣","username":"liusijia"}
+21-04-14 15:07:46.104 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"635842920920","username":"liusijia"}
+21-04-14 15:17:18.360 [http-nio-8888-exec-6] ERROR com.kayn.auth.JWTAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 用户不存在
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at com.kayn.auth.JWTAuthenticationFilter.attemptAuthentication(JWTAuthenticationFilter.java:48) ~[classes/:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: java.lang.RuntimeException: 用户不存在
+	at com.kayn.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:38) ~[classes/:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.5.jar:5.4.5]
+	... 53 more
+21-04-14 15:18:09.743 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"傻逼","username":"liuersha"}
+21-04-14 15:18:12.372 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"傻逼","username":"liuersha"}
+21-04-14 15:18:13.888 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"傻逼","username":"liuersha"}
+21-04-14 15:18:15.262 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"傻逼","username":"liuersha"}
+21-04-14 15:18:23.267 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"高跟鞋","username":"liuersha"}
+21-04-14 15:18:39.834 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"民国风","username":"liuersha"}
+21-04-14 15:18:51.847 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"民国风学生装","username":"liuersha"}
+21-04-14 15:19:01.645 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:19:13.128 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"638246281808","username":"liuersha"}
+21-04-14 15:19:39.744 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:19:46.967 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:19:56.530 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:20:01.651 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productId":"642500258178","username":"liuersha"}
+21-04-14 15:20:06.180 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"639312324397","username":"liuersha"}
+21-04-14 15:20:09.662 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productId":"642500258178","username":"liuersha"}
+21-04-14 15:20:20.038 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:20:23.966 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:20:25.519 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:20:51.488 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"624944948111","username":"liuersha"}
+21-04-14 15:21:11.916 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liuersha"}
+21-04-14 15:24:21.271 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"民国风 校园","username":"liuersha"}
+21-04-14 15:24:31.083 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"614775973944","username":"liuersha"}
+21-04-14 15:24:51.433 [http-nio-8888-exec-5] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"614775973944","productImg":"https://img.alicdn.com/bao/uploaded/i4/2110425635/O1CN018v4Exz1rUsQEOOpbH_!!2110425635.jpg","productName":"2021春夏新款情侣装中国风汉服民国风套装校园高中学生毕业班服女","productNum":1,"salePrice":45.0,"username":"liuersha"}
+21-04-14 15:25:15.805 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=614775973944, orderId=null, salePrice=45.0, productNum=1, limitNum=null, checked=1, productName=2021春夏新款情侣装中国风汉服民国风套装校园高中学生毕业班服女, productImg=https://img.alicdn.com/bao/uploaded/i4/2110425635/O1CN018v4Exz1rUsQEOOpbH_!!2110425635.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"45.0","username":"liuersha"}
+21-04-14 15:25:24.252 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"614775973944","username":"liuersha"}
+21-04-14 15:25:51.139 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liuersha"}
+21-04-14 15:25:58.763 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"614775973944","username":"liuersha"}
+21-04-14 15:26:01.334 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"614775973944","productImg":"https://img.alicdn.com/bao/uploaded/i4/2110425635/O1CN018v4Exz1rUsQEOOpbH_!!2110425635.jpg","productName":"2021春夏新款情侣装中国风汉服民国风套装校园高中学生毕业班服女","productNum":1,"salePrice":45.0,"username":"liuersha"}
+21-04-14 15:26:04.951 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=614775973944, orderId=null, salePrice=45.0, productNum=1, limitNum=null, checked=1, productName=2021春夏新款情侣装中国风汉服民国风套装校园高中学生毕业班服女, productImg=https://img.alicdn.com/bao/uploaded/i4/2110425635/O1CN018v4Exz1rUsQEOOpbH_!!2110425635.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"45.0","username":"liuersha"}
+21-04-14 15:26:10.940 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderId":"66","orderTotal":"45.0","username":"liuersha"}
+21-04-14 17:21:27.170 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-14 17:21:26.857 [restartedMain] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 13788 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-14 17:21:27.228 [restartedMain] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-14 17:21:27.293 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-04-14 17:21:27.296 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-04-14 17:21:28.685 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-14 17:21:28.698 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-14 17:21:28.701 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-14 17:21:28.704 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-14 17:21:28.821 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-14 17:21:28.824 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1524 ms
+21-04-14 17:21:29.960 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "addressId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.address.Address",So @TableField annotation will not work!
+21-04-14 17:21:30.073 [restartedMain] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This "orderId" is the table primary key by @TableId annotation in Class: "com.kayn.pojo.order.MyOrder",So @TableField annotation will not work!
+21-04-14 17:21:30.245 [restartedMain] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@aca37d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@2859ba73, org.springframework.security.web.header.HeaderWriterFilter@42eeed84, org.springframework.security.web.authentication.logout.LogoutFilter@174557a7, com.kayn.auth.JWTAuthenticationFilter@5175d787, com.kayn.auth.JWTAuthorizationFilter@755bf9ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c38f80f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@241fa134, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61296780, org.springframework.security.web.session.SessionManagementFilter@6edb74b6, org.springframework.security.web.access.ExceptionTranslationFilter@67111b7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76998e8]
+21-04-14 17:21:30.376 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-14 17:21:30.680 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+21-04-14 17:21:30.705 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-14 17:21:30.728 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-14 17:21:30.743 [restartedMain] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.881 seconds (JVM running for 6.311)
+21-04-14 17:22:07.170 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-14 17:22:07.172 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-14 17:22:07.175 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-14 17:22:07.897 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-14 17:22:08.078 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-14 17:22:11.846 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liuersha"}
+21-04-14 17:22:16.877 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"564343960735","productImg":"https://img.alicdn.com/bao/uploaded/i1/193655820/O1CN01F1TkhT1srbm5pyUu8_!!0-item_pic.jpg","productName":"apple /苹果macbook air超薄便携","productNum":1,"salePrice":1998.0,"username":"liuersha"}
+21-04-14 17:22:22.138 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liuersha"}
+21-04-14 17:22:26.895 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"大数据","username":"liuersha"}
+21-04-14 17:22:34.309 [http-nio-8888-exec-6] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"536647589205","productImg":"https://img.alicdn.com/bao/uploaded/i4/859515618/O1CN011o35e91rN5fTUkp1I_!!0-item_pic.jpg","productName":"r语言实战第二2版r语言编程入门","productNum":1,"salePrice":76.25,"username":"liuersha"}
+21-04-14 17:22:38.162 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"大数据","username":"liuersha"}
+21-04-14 17:22:42.782 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"601318154661","productImg":"https://img.alicdn.com/bao/uploaded/i1/2369322973/O1CN01w7gXV51Xpg3f411wL_!!0-item_pic.jpg","productName":"数据思维从数据分析到商业价值读物","productNum":1,"salePrice":34.5,"username":"liuersha"}
+21-04-14 17:22:47.712 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=536647589205, orderId=null, salePrice=76.25, productNum=1, limitNum=null, checked=1, productName=r语言实战第二2版r语言编程入门, productImg=https://img.alicdn.com/bao/uploaded/i4/859515618/O1CN011o35e91rN5fTUkp1I_!!0-item_pic.jpg), OrderGood(id=null, productId=601318154661, orderId=null, salePrice=34.5, productNum=1, limitNum=null, checked=1, productName=数据思维从数据分析到商业价值读物, productImg=https://img.alicdn.com/bao/uploaded/i1/2369322973/O1CN01w7gXV51Xpg3f411wL_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"110.75","username":"liuersha"}
+21-04-14 17:22:51.956 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderId":"67","orderTotal":"111.0","username":"liuersha"}
+21-04-14 17:22:54.799 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"macbook","username":"liuersha"}
+21-04-14 17:23:03.101 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"spark","username":"liuersha"}
+21-04-14 17:23:10.168 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"576154650130","productImg":"https://img.alicdn.com/bao/uploaded/i1/2169854453/O1CN01zyyPSl1ilWCXAfD96_!!0-item_pic.jpg","productName":"全3本hadoop权威指南第4版+平台","productNum":1,"salePrice":168.0,"username":"liuersha"}
+21-04-14 17:23:13.426 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=576154650130, orderId=null, salePrice=168.0, productNum=1, limitNum=null, checked=1, productName=全3本hadoop权威指南第4版+平台, productImg=https://img.alicdn.com/bao/uploaded/i1/2169854453/O1CN01zyyPSl1ilWCXAfD96_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"168.0","username":"liuersha"}
+21-04-14 17:23:16.799 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderId":"68","orderTotal":"168.0","username":"liuersha"}
+21-04-14 17:37:29.243 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"女神","username":"liuersha"}
+21-04-14 17:37:32.759 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"女神","username":"liuersha"}
+21-04-14 17:37:33.762 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"女神","username":"liuersha"}
+21-04-14 17:37:39.910 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"549219060812","username":"liuersha"}
+21-04-14 17:37:45.192 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"549219060812","productImg":"https://img.alicdn.com/bao/uploaded/i1/874718367/O1CN017WLXVz2Bg8T1Z4XpZ_!!0-item_pic.jpg","productName":"黑白拼接连衣裙女夏2021早春新款高端职业气质女神范今年流行裙子","productNum":1,"salePrice":168.0,"username":"liuersha"}
+21-04-14 17:37:49.029 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=549219060812, orderId=null, salePrice=168.0, productNum=1, limitNum=null, checked=1, productName=黑白拼接连衣裙女夏2021早春新款高端职业气质女神范今年流行裙子, productImg=https://img.alicdn.com/bao/uploaded/i1/874718367/O1CN017WLXVz2Bg8T1Z4XpZ_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"168.0","username":"liuersha"}
+21-04-14 17:37:52.497 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderId":"69","orderTotal":"168.0","username":"liuersha"}
+21-04-14 17:38:10.816 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"619090402166","username":"liuersha"}
+21-04-14 17:38:12.418 [http-nio-8888-exec-7] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"619090402166","productImg":"https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg","productName":"妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子","productNum":1,"salePrice":259.0,"username":"liuersha"}
+21-04-14 17:38:15.933 [http-nio-8888-exec-5] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=619090402166, orderId=null, salePrice=259.0, productNum=1, limitNum=null, checked=1, productName=妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子, productImg=https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"259.0","username":"liuersha"}
+21-04-14 17:38:21.363 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderId":"70","orderTotal":"259.0","username":"liuersha"}
+21-04-14 17:42:01.148 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productId":"619090402166","username":"liuersha"}
+21-04-14 17:42:02.833 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"619090402166","productImg":"https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg","productName":"妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子","productNum":1,"salePrice":259.0,"username":"liuersha"}
+21-04-14 17:42:06.246 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=619090402166, orderId=null, salePrice=259.0, productNum=1, limitNum=null, checked=1, productName=妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子, productImg=https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"259.0","username":"liuersha"}
+21-04-14 17:42:09.698 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"orderId":"71","orderTotal":"259.0","username":"liuersha"}
+21-04-14 18:52:02.241 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"619090402166","username":"liuersha"}
+21-04-14 18:52:04.205 [http-nio-8888-exec-10] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"619090402166","productImg":"https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg","productName":"妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子","productNum":1,"salePrice":259.0,"username":"liuersha"}
+21-04-14 18:52:09.025 [http-nio-8888-exec-1] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=619090402166, orderId=null, salePrice=259.0, productNum=1, limitNum=null, checked=1, productName=妃子 多色赫本礼服连衣裙 2020年夏季新款气质女神范小个子裙子, productImg=https://img.alicdn.com/bao/uploaded/i2/1590889282/O1CN01FPadJ22IRCxFgW63D_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"259.0","username":"liuersha"}
+21-04-14 18:52:13.927 [http-nio-8888-exec-5] INFO  com.kayn.controller.OrderController - {"orderId":"72","orderTotal":"259.0","username":"liuersha"}
+21-04-14 18:52:39.339 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"树袋熊","username":"liuersha"}
+21-04-14 18:53:23.148 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"20173565115","username":"liuersha"}
+21-04-14 18:53:30.420 [http-nio-8888-exec-1] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"20173565115","productImg":"https://img.alicdn.com/bao/uploaded/i1/1738225422/TB1OkasOpXXXXblXXXXXXXXXXXX_!!0-item_pic.jpg","productName":"可爱掌中考拉公仔毛绒玩具仿真树袋熊迷你小号娃娃儿童女孩礼物","productNum":1,"salePrice":19.0,"username":"liuersha"}
+21-04-14 18:53:36.286 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=20173565115, orderId=null, salePrice=19.0, productNum=1, limitNum=null, checked=1, productName=可爱掌中考拉公仔毛绒玩具仿真树袋熊迷你小号娃娃儿童女孩礼物, productImg=https://img.alicdn.com/bao/uploaded/i1/1738225422/TB1OkasOpXXXXblXXXXXXXXXXXX_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"19.0","username":"liuersha"}
+21-04-14 18:53:41.264 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"20173565115","username":"liuersha"}
+21-04-14 18:53:50.631 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderId":"73","orderTotal":"19.0","username":"liuersha"}

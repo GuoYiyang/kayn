@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，
+你会看到log4j2内部各种详细输出。可以设置成OFF(关闭)或Error(只输出错误信息) -->
+<Configuration status="OFF">
+    <Properties>
+        <!-- 配置日志文件输出目录 -->
+        <Property name="log_path" value="log/" />
+        <Property name="file_name">log</Property>
+        <Property name="kafka_log_topic">kafka_log_topic</Property>
+        <Property name="bootstrap_servers">localhost:9092</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- 输出控制台日志的配置 -->
+        <Console name="console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY" />
+            <!-- 输出日志的格式 -->
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="log_file" fileName="${log_path}/${file_name}.log"  append="true" immediateFlush="true">
+            <PatternLayout pattern="%d{yy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+        <Kafka name="kafka" topic="${kafka_log_topic}">
+            <!--<PatternLayout pattern="%date %message"/>-->
+            <Property name="bootstrap.servers">${bootstrap_servers}</Property>
+            <!--json格式输出-->
+            <JsonLayout compact="true" locationInfo="true" complete="false" eventEol="true"/>
+        </Kafka>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="kafka"/>
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="log_file"/>
+        </Root>
+        <!-- <Logger name="org.apache.kafka" level="INFO" />--> <!-- avoid recursive logging -->
+        <logger name="org.springframework" level="INFO"/>
+    </Loggers>
+</Configuration>

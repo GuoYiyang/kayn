@@ -1,0 +1,31 @@
+# 日志
+logging:
+  config: classpath:log4j.xml
+
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3306/kayn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  # 热部署
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+
+# 端口
+server:
+  port: 8888
+
+
+# 淘宝客Api接口配置
+taobaoke:
+  url: "https://api.taobaokeapi.com"
+  usertoken: "0c0d1cc55a4226364c0a914a5a04223d"
+  site_id: "2255900096"
+  adzone_id: "111236250012"
