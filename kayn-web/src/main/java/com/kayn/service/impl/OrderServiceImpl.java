@@ -96,7 +96,7 @@ public class OrderServiceImpl implements OrderService {
         OrderResult orderResult = new OrderResult();
         try {
             List<MyOrder> myOrderList = myOrderMapper.selectPage(new Page<>(currentPage, pageSize),
-                    new QueryWrapper<MyOrder>().eq("username", username)).getRecords();
+                    new QueryWrapper<MyOrder>().eq("username", username).orderByDesc("order_id")).getRecords();
             for(MyOrder order : myOrderList) {
                 Long orderId = order.getOrderId();
                 List<OrderGood> orderGoodList = orderGoodMapper.selectList(new QueryWrapper<OrderGood>().eq("order_id", orderId));

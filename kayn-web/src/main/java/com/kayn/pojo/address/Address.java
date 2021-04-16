@@ -11,8 +11,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("kayn_address")
 public class Address {
-    @TableId(type = IdType.AUTO)
-    @TableField("address_id")
+    @TableId(value = "address_id", type = IdType.AUTO)
     private Long addressId;
     private String username;
     private String name;

@@ -15,8 +15,7 @@ import java.util.List;
 @Accessors(chain = true)
 @TableName("kayn_myorder")
 public class MyOrder {
-    @TableId(type = IdType.AUTO)
-    @TableField("order_id")
+    @TableId(value = "order_id",type = IdType.AUTO)
     private Long orderId;
     @TableField("address_id")
     private Long addressId;

@@ -41,6 +41,9 @@ public class GoodsController {
                                         @RequestParam(value = "sort", required = false) Integer sort,
                                         @RequestParam(value = "priceGt", required = false) Integer priceGt,
                                         @RequestParam(value = "priceLte", required = false) Integer priceLte) {
+        if (q.equals("")) {
+            q = "默认";
+        }
         HashMap<String, String> info = new HashMap<>();
         info.put("username", username);
         info.put("query", q);

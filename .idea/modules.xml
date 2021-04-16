@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kayn-recommender/dataloader/dataloader.iml" filepath="$PROJECT_DIR$/kayn-recommender/dataloader/dataloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/kayn.iml" filepath="$PROJECT_DIR$/kayn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kayn-core/kayn-core.iml" filepath="$PROJECT_DIR$/kayn-core/kayn-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/kayn-web/kayn-web.iml" filepath="$PROJECT_DIR$/kayn-web/kayn-web.iml" />
     </modules>
   </component>
