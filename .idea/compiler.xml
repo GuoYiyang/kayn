@@ -10,7 +10,7 @@
         <module name="kayn-web" />
         <module name="DataLoader" />
         <module name="untitled" />
-        <module name="dataloader" />
+        <module name="kayn-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

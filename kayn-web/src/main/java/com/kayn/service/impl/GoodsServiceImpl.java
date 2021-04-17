@@ -127,6 +127,7 @@ public class GoodsServiceImpl implements GoodsService {
             goodDetail.setProductName(jsonGood.getString("title"));
             goodDetail.setSubTitle(jsonGood.getString("nick"));
             goodDetail.setSalePrice(jsonGood.getDouble("zk_final_price"));
+            goodDetail.setCatName(jsonGood.getString("cat_name"));
             goodDetail.setLimitNum(10);
             try {
                 Document doc = Jsoup.connect(jsonGood.getString("item_url")).get();

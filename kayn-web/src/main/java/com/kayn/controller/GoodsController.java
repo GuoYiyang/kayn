@@ -752,11 +752,13 @@ public class GoodsController {
     public Result<GoodDetail> getGoodDetail(@RequestBody JSONObject jsonObject) {
         Long productId = jsonObject.getLong("productId");
         String username = jsonObject.getString("username");
+        Result<GoodDetail> result = goodsService.getGoodDetail(productId);
         HashMap<String, String> info = new HashMap<>();
         info.put("productId", productId.toString());
         info.put("username", username);
+        info.put("catName", result.getResult().getCatName());
         logger.info(JSONObject.toJSONString(info));
-        return goodsService.getGoodDetail(productId);
+        return result;
     }
 
     /**

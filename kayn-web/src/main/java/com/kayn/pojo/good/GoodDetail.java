@@ -12,6 +12,7 @@ public class GoodDetail {
     private Double salePrice;
     private String productName;
     private String subTitle;
+    private String catName;
     private int limitNum;
     private String productImageBig;
     private String detail;
