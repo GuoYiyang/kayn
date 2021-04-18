@@ -18,7 +18,7 @@ import java.util.HashMap;
 class TaobaokeApiClientTest {
 
     @Autowired
-    private TaobaokeApiClient client;
+    private HttpClient client;
 
 
     @Test

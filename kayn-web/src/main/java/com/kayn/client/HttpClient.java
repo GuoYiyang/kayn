@@ -14,7 +14,9 @@ import java.net.URISyntaxException;
 import java.util.Map;
 
 @Component
-public class TaobaokeApiClient {
+public class HttpClient {
+
+    CloseableHttpClient httpclient = HttpClients.createDefault();
 
     /**
      * 获取数据
@@ -23,8 +25,6 @@ public class TaobaokeApiClient {
      * @return String
      */
     public String getData(String url, Map<String, String> map) {
-        // 创建Httpclient对象,相当于打开了浏览器
-        CloseableHttpClient httpclient = HttpClients.createDefault();
         CloseableHttpResponse response = null;
         try {
             URIBuilder uriBuilder = new URIBuilder(url);
@@ -51,12 +51,6 @@ public class TaobaokeApiClient {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            // 关闭浏览器
-            try {
-                httpclient.close();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
         }
         return null;

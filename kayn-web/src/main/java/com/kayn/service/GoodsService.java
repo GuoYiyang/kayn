@@ -17,7 +17,7 @@ public interface GoodsService {
      * @param priceLte 价格最小值
      * @return Result<GoodPage>
      */
-    Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Integer priceGt, Integer priceLte);
+    Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Double priceGt, Double priceLte);
 
     /**
      * 查询淘宝商品详情

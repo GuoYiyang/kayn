@@ -2,10 +2,12 @@ package com.kayn.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kayn.mapper.user.UserInfoMapper;
+import com.kayn.mapper.user.UserLabelMapper;
 import com.kayn.mapper.user.UserMapper;
 import com.kayn.mapper.user.UserRoleMapper;
 import com.kayn.pojo.user.User;
 import com.kayn.pojo.user.UserInfo;
+import com.kayn.pojo.user.UserLabel;
 import com.kayn.pojo.user.UserRole;
 import com.kayn.result.Result;
 import com.kayn.service.LoginService;
@@ -27,6 +29,9 @@ public class LoginServiceImpl implements LoginService {
 
     @Resource
     private UserRoleMapper userRoleMapper;
+
+    @Resource
+    private UserLabelMapper userLabelMapper;
 
     @Override
     public Result<UserInfo> checkLogin(String tokenHeader) {
@@ -57,6 +62,7 @@ public class LoginServiceImpl implements LoginService {
             userMapper.insert(new User().setUsername(username).setPassword(password));
             userInfoMapper.insert(new UserInfo().setUsername(username));
             userRoleMapper.insert(new UserRole().setUsername(username).setRole("ROLE_USER"));
+            userLabelMapper.insert(new UserLabel().setUsername(username));
             result.setCode(200)
                     .setSuccess(true)
                     .setTimestamp(new Date().getTime())

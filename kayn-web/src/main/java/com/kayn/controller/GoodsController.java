@@ -6,7 +6,8 @@ import com.kayn.pojo.good.GoodPage;
 import com.kayn.pojo.good.PanelResult;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
-import org.apache.kafka.common.protocol.types.Field;
+import com.kayn.service.RecommenderService;
+import com.kayn.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,12 @@ public class GoodsController {
 
     @Resource
     private GoodsService goodsService;
+
+    @Resource
+    private RecommenderService recommenderService;
+
+    @Resource
+    private UserService userService;
 
     /**
      * 检索商品页接口
@@ -39,10 +46,18 @@ public class GoodsController {
                                         @RequestParam("size") Integer pageSize,
                                         @RequestParam("page") Integer pageNo,
                                         @RequestParam(value = "sort", required = false) Integer sort,
-                                        @RequestParam(value = "priceGt", required = false) Integer priceGt,
-                                        @RequestParam(value = "priceLte", required = false) Integer priceLte) {
-        if (q.equals("")) {
-            q = "默认";
+                                        @RequestParam(value = "priceGt", required = false) Double priceGt,
+                                        @RequestParam(value = "priceLte", required = false) Double priceLte) {
+        if (username != null) {
+            userService.refreshUser(username);
+            String mostQuery = recommenderService.getTotalMostQuery(username);
+            if (q.equals("")) {
+                if (mostQuery != null) {
+                    q = mostQuery;
+                } else {
+                    q = "默认";
+                }
+            }
         }
         HashMap<String, String> info = new HashMap<>();
         info.put("username", username);

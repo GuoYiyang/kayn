@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.kayn.mapper.user.UserInfoMapper;
 import com.kayn.pojo.user.UserInfo;
 import com.kayn.result.Result;
+import com.kayn.service.RecommenderService;
 import com.kayn.service.UserService;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,19 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private UserInfoMapper userInfoMapper;
+
+    @Resource
+    private RecommenderService recommenderService;
+
+    @Override
+    public void refreshUser(String username) {
+        recommenderService.getTotalPayAvg(username);
+        recommenderService.getTotalMostQuery(username);
+        recommenderService.getPreferTel(username);
+        recommenderService.getPreferCat(username);
+        recommenderService.getTotalPayCnt(username);
+        recommenderService.getTotalPayMoney(username);
+    }
 
     @Override
     public Result<UserInfo> editUser(UserInfo userInfo) {

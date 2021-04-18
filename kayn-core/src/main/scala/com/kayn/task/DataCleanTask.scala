@@ -17,6 +17,7 @@ case class AddCart(
                   addCartCnt: Int,
                   timeStamp: Long
                   )
+
 case class PayOrder(
                     username: String,
                     totalPrice: Float,
@@ -33,6 +34,11 @@ case class Cat(
                 cat: String,
                 cnt: Int
               )
+
+case class Query(
+                query: String,
+                cnt: Int
+                )
 
 
 case class PreferTel(
@@ -54,6 +60,14 @@ case class PreferCat(
                       cnt : Int,
                       timeStamp: Long
                     )
+
+case class LastMostQuery(
+                        username: String,
+                        query: mutable.MutableList[Query],
+                        cnt : Int,
+                        timeStamp: Long
+                        )
+
 object DataCleanTask {
 
   def main(args: Array[String]): Unit = {
@@ -135,6 +149,17 @@ object DataCleanTask {
         |}
         |""".stripMargin
 
+    val getGoodPageQuery =
+      """
+        |{
+        |  "query": {
+        |    "match": {
+        |      "source.method": "getGoodPage"
+        |    }
+        |  }
+        |}
+        |""".stripMargin
+
     // 从es中读取数据
     val sparkContext = new SparkContext(sparkConf)
 
@@ -142,6 +167,7 @@ object DataCleanTask {
     val addOrderEsRDD = sparkContext.esRDD("kafka-log-" + currentDate, addOrderQuery)
     val payOrderEsRDD = sparkContext.esRDD("kafka-log-" + currentDate, payOrderQuery)
     val getGoodDetailEsRDD = sparkContext.esRDD("kafka-log-" + currentDate, getGoodDetailQuery)
+    val getGoodPageEsRDD = sparkContext.esRDD("kafka-log-" + currentDate, getGoodPageQuery)
 
     //创建spark session
     val spark = SparkSession.builder().config(sparkConf).getOrCreate()
@@ -231,11 +257,37 @@ object DataCleanTask {
         var cnt = 0
         x._2.foreach(y => {
           list += Cat(y._1, y._2)
-          cnt += 1
+          cnt += y._2
         })
         PreferCat(x._1, list, cnt, System.currentTimeMillis())
       })
       .saveToEs("prefer_cat", writeConfig)
+
+    //  统计搜索关键词
+    getGoodPageEsRDD
+      .map(x => {
+        val doc = x._2("doc").asInstanceOf[mutable.Map[String, String]]
+        (doc("username"), doc("query"))
+      })
+      .map(x => {
+        val key = x._1 + "_" + x._2
+        (key,1)
+      })
+      .reduceByKey(_ + _)
+      .map(x => {
+        (x._1.split("_")(0),(x._1.split("_")(1), x._2))
+      })
+      .groupByKey()
+      .map(x => {
+        var list = mutable.MutableList[Query]()
+        var cnt = 0
+        x._2.foreach(y => {
+          list += Query(y._1, y._2)
+          cnt += y._2
+        })
+        LastMostQuery(x._1, list, cnt, System.currentTimeMillis())
+      })
+      .saveToEs("last_query", writeConfig)
 
 
     spark.stop()

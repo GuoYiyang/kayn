@@ -1281,3 +1281,486 @@ Caused by: java.lang.RuntimeException: 用户不存在
 21-04-17 17:58:11.032 [http-nio-8888-exec-2] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"578057170347","productImg":"https://img.alicdn.com/bao/uploaded/i1/2185273970/O1CN01ttK5K71fCJ3SDGFjH_!!2185273970-0-picasso.jpg","productName":"梦舒雅高腰黑色休闲西装裤小脚裤子","productNum":1,"salePrice":149.0,"username":"admin"}
 21-04-17 17:58:14.983 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=578057170347, orderId=null, salePrice=149.0, productNum=1, limitNum=null, checked=1, productName=梦舒雅高腰黑色休闲西装裤小脚裤子, productImg=https://img.alicdn.com/bao/uploaded/i1/2185273970/O1CN01ttK5K71fCJ3SDGFjH_!!2185273970-0-picasso.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"149.0","username":"admin"}
 21-04-17 17:58:18.112 [http-nio-8888-exec-2] INFO  com.kayn.controller.OrderController - {"orderId":"113","orderTotal":"149.0","username":"admin"}
+21-04-18 11:38:52.855 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 11:38:52.490 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 6004 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 11:38:52.904 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 11:38:54.681 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 11:38:54.694 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 11:38:54.697 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 11:38:54.699 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 11:38:54.813 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 11:38:54.816 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1838 ms
+21-04-18 11:38:56.252 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@724b939e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dfb885e, org.springframework.security.web.header.HeaderWriterFilter@4d3c6593, org.springframework.security.web.authentication.logout.LogoutFilter@2513a118, com.kayn.auth.JWTAuthenticationFilter@6f8aba08, com.kayn.auth.JWTAuthorizationFilter@7ff19c33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e3e1014, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@332bcab0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52b3bf03, org.springframework.security.web.session.SessionManagementFilter@516462cc, org.springframework.security.web.access.ExceptionTranslationFilter@42aae04d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@341b13a8]
+21-04-18 11:38:56.391 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 11:38:56.679 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 11:38:56.696 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 11:38:56.709 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.134 seconds (JVM running for 6.708)
+21-04-18 11:39:26.535 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 11:39:26.537 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 11:39:26.541 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-18 11:39:27.363 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 11:39:27.538 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 11:39:28.810 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 11:39:35.991 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"598611817969","catName":"男装","username":"admin"}
+21-04-18 11:42:07.433 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 11:42:10.221 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 12:15:32.896 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1}
+21-04-18 12:16:20.063 [http-nio-8888-exec-8] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+21-04-18 13:44:48.644 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 13:44:48.338 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 6012 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 13:44:48.688 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 13:44:49.905 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 13:44:49.917 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 13:44:49.920 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 13:44:49.922 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 13:44:50.021 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 13:44:50.023 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1282 ms
+21-04-18 13:44:51.916 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6198e9b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d979d34, org.springframework.security.web.header.HeaderWriterFilter@7be2f29a, org.springframework.security.web.authentication.logout.LogoutFilter@6a1d6ef2, com.kayn.auth.JWTAuthenticationFilter@6d099323, com.kayn.auth.JWTAuthorizationFilter@4ecd00b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49cb1baf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47768e74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10947c4e, org.springframework.security.web.session.SessionManagementFilter@2c2a027c, org.springframework.security.web.access.ExceptionTranslationFilter@3df1a1ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d7399f9]
+21-04-18 13:44:52.063 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 13:44:52.341 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 13:44:52.362 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 13:44:52.377 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 4.857 seconds (JVM running for 6.15)
+21-04-18 13:45:15.065 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 13:45:15.068 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 13:45:15.072 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-18 13:45:15.493 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 13:45:15.687 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 13:45:32.796 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:39.905 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:42.122 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:44.367 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:45.621 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:46.756 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:47.857 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:48.792 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:49.787 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:46:50.837 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:47:03.782 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 13:47:03.484 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 18704 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 13:47:03.826 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 13:47:05.114 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 13:47:05.129 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 13:47:05.132 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 13:47:05.135 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 13:47:05.251 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 13:47:05.254 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1373 ms
+21-04-18 13:47:07.414 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49a6f486, org.springframework.security.web.context.SecurityContextPersistenceFilter@58606c91, org.springframework.security.web.header.HeaderWriterFilter@4fc5563d, org.springframework.security.web.authentication.logout.LogoutFilter@1cfc2538, com.kayn.auth.JWTAuthenticationFilter@14fded9d, com.kayn.auth.JWTAuthorizationFilter@bc6288b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4baed682, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77dba4cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a3bd45b, org.springframework.security.web.session.SessionManagementFilter@31120021, org.springframework.security.web.access.ExceptionTranslationFilter@6cd98a05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75babb67]
+21-04-18 13:47:07.549 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 13:47:07.854 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 13:47:07.874 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 13:47:07.888 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.309 seconds (JVM running for 6.691)
+21-04-18 13:47:24.172 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 13:47:24.175 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 13:47:24.178 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-18 13:47:24.509 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 13:47:24.674 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 13:47:25.478 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 13:47:46.228 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:47:47.700 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:13.697 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 13:49:13.409 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 9412 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 13:49:13.739 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 13:49:15.003 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 13:49:15.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 13:49:15.017 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 13:49:15.020 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 13:49:15.114 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 13:49:15.116 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1319 ms
+21-04-18 13:49:17.231 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f2d995e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c2a027c, org.springframework.security.web.header.HeaderWriterFilter@6a9cd0f8, org.springframework.security.web.authentication.logout.LogoutFilter@42cc183e, com.kayn.auth.JWTAuthenticationFilter@75156240, com.kayn.auth.JWTAuthorizationFilter@6198e9b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d979d34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c380bd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d099323, org.springframework.security.web.session.SessionManagementFilter@7be2f29a, org.springframework.security.web.access.ExceptionTranslationFilter@286090c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67774e29]
+21-04-18 13:49:17.376 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 13:49:17.683 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 13:49:17.701 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 13:49:17.714 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.182 seconds (JVM running for 6.51)
+21-04-18 13:49:24.354 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 13:49:24.357 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 13:49:24.361 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-18 13:49:24.713 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 13:49:24.884 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 13:49:26.670 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:30.332 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"598611817969","catName":"男装","username":"admin"}
+21-04-18 13:49:32.617 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"600161362176","catName":"男装","username":"admin"}
+21-04-18 13:49:41.069 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"600161362176","productImg":"https://img.alicdn.com/bao/uploaded/i2/2206937308/O1CN01bgTjfv23r701Jq0Qm_!!0-item_pic.jpg","productName":"默认男士休闲裤商务免烫西裤春夏季韩版修身西服裤子男垂感西装裤","productNum":1,"salePrice":128.0,"username":"admin"}
+21-04-18 13:49:44.306 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=600161362176, orderId=null, salePrice=128.0, productNum=1, limitNum=null, checked=1, productName=默认男士休闲裤商务免烫西裤春夏季韩版修身西服裤子男垂感西装裤, productImg=https://img.alicdn.com/bao/uploaded/i2/2206937308/O1CN01bgTjfv23r701Jq0Qm_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"128.0","username":"admin"}
+21-04-18 13:49:46.657 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderId":"114","orderTotal":"128.0","username":"admin"}
+21-04-18 13:49:53.202 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:54.470 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:56.321 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:57.190 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:49:58.637 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:50:00.373 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 13:50:07.365 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"606405357270","catName":"男装","username":"admin"}
+21-04-18 13:50:16.734 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"602726677080","catName":"男装","username":"admin"}
+21-04-18 13:50:55.528 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"productId":"636871420661","catName":"女鞋","username":"admin"}
+21-04-18 13:51:15.527 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"613154545351","catName":"商务/设计服务","username":"admin"}
+21-04-18 13:51:49.906 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"640062325258","catName":"商务/设计服务","username":"admin"}
+21-04-18 13:57:37.362 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"admin"}
+21-04-18 13:57:40.866 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productId":"617858001520","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 13:57:43.748 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"620167183516","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 13:57:50.713 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"productId":"592729144311","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 13:57:50.746 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productId":"598187086649","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 13:58:02.077 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"587365690113","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 13:58:06.855 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"admin"}
+21-04-18 14:01:06.380 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 14:01:09.741 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productId":"602548369551","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 14:01:11.186 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 14:01:12.763 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 14:01:14.018 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 14:01:16.279 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"口红","username":"admin"}
+21-04-18 14:01:30.039 [http-nio-8888-exec-9] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"562217798988","productImg":"https://img.alicdn.com/bao/uploaded/i4/3527212490/O1CN01WWdZri1UGSsPPviCw_!!0-item_pic.jpg","productName":"【会员日】阿玛尼红管唇釉丝绒烂口红","productNum":1,"salePrice":310.0,"username":"admin"}
+21-04-18 14:01:34.178 [http-nio-8888-exec-10] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=562217798988, orderId=null, salePrice=310.0, productNum=1, limitNum=null, checked=1, productName=【会员日】阿玛尼红管唇釉丝绒烂口红, productImg=https://img.alicdn.com/bao/uploaded/i4/3527212490/O1CN01WWdZri1UGSsPPviCw_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"310.0","username":"admin"}
+21-04-18 14:01:36.415 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderId":"115","orderTotal":"310.0","username":"admin"}
+21-04-18 14:01:40.242 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productId":"562217798988","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 16:07:55.687 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9/192.168.220.1:9092) could not be established. Broker may not be available.
+21-04-18 16:07:55.794 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9/192.168.136.1:9092) could not be established. Broker may not be available.
+21-04-18 16:08:20.193 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34m24s492ms371µs).
+21-04-18 17:54:14.151 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"562217798988","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 17:54:24.395 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"TF","username":"admin"}
+21-04-18 17:54:27.262 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"617858001520","productImg":"https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg","productName":"大牌正品韩奈儿tf女不掉色滋润口红","productNum":1,"salePrice":59.0,"username":"admin"}
+21-04-18 17:54:30.060 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"587217237686","catName":"彩妆/香水/美妆工具","username":"admin"}
+21-04-18 17:54:53.540 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=617858001520, orderId=null, salePrice=59.0, productNum=1, limitNum=null, checked=1, productName=大牌正品韩奈儿tf女不掉色滋润口红, productImg=https://img.alicdn.com/bao/uploaded/i2/2207648270902/O1CN01Y4qQBh1IX9sAS5dVF_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"15150006826","orderTotal":"59.0","username":"admin"}
+21-04-18 17:54:56.062 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderId":"116","orderTotal":"59.0","username":"admin"}
+21-04-18 18:32:50.343 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"恋爱心理学","username":"admin"}
+21-04-18 18:33:03.132 [http-nio-8888-exec-4] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"608468162208","productImg":"https://img.alicdn.com/bao/uploaded/i1/2206631958030/O1CN01n6WfDR29Bn59akqqb_!!0-item_pic.jpg","productName":"如何爱人你【正版】让你爱的人你喜欢","productNum":1,"salePrice":29.9,"username":"admin"}
+21-04-18 18:33:06.637 [http-nio-8888-exec-9] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=608468162208, orderId=null, salePrice=29.9, productNum=1, limitNum=null, checked=1, productName=如何爱人你【正版】让你爱的人你喜欢, productImg=https://img.alicdn.com/bao/uploaded/i1/2206631958030/O1CN01n6WfDR29Bn59akqqb_!!0-item_pic.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"29.9","username":"admin"}
+21-04-18 18:33:09.394 [http-nio-8888-exec-4] INFO  com.kayn.controller.OrderController - {"orderId":"117","orderTotal":"30.0","username":"admin"}
+21-04-18 21:10:26.105 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"admin"}
+21-04-18 21:10:38.003 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 21:10:37.464 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 25452 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 21:10:38.097 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 21:10:40.713 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 21:10:40.744 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 21:10:40.747 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 21:10:40.750 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 21:10:41.016 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 21:10:41.022 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2834 ms
+21-04-18 21:10:44.522 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6413d7e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@1668919e, org.springframework.security.web.header.HeaderWriterFilter@4ceff87d, org.springframework.security.web.authentication.logout.LogoutFilter@58af5076, com.kayn.auth.JWTAuthenticationFilter@d16be4f, com.kayn.auth.JWTAuthorizationFilter@17b37e9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22c53d82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a936e64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bcb12e6, org.springframework.security.web.session.SessionManagementFilter@2c7db926, org.springframework.security.web.access.ExceptionTranslationFilter@4130955c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62a68bcb]
+21-04-18 21:10:44.701 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 21:10:45.305 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 21:10:45.330 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 21:10:45.345 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 9.074 seconds (JVM running for 10.783)
+21-04-18 21:10:57.565 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 21:10:57.567 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 21:10:57.571 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+21-04-18 21:10:57.957 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 21:10:58.296 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 21:10:59.879 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:10:59.902 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:10:59.961 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:11:03.735 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:11:03.748 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:11:03.754 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:11:20.606 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:11:20.625 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:11:20.634 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:11:54.884 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 21:11:54.570 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 8728 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 21:11:54.933 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 21:11:56.294 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 21:11:56.308 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 21:11:56.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 21:11:56.314 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 21:11:56.453 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 21:11:56.456 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1467 ms
+21-04-18 21:11:58.685 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b74ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bfaba70, org.springframework.security.web.header.HeaderWriterFilter@2dd8ff1d, org.springframework.security.web.authentication.logout.LogoutFilter@2fe74516, com.kayn.auth.JWTAuthenticationFilter@14924f41, com.kayn.auth.JWTAuthorizationFilter@493da830, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9301672, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68d6d775, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f939a0f, org.springframework.security.web.session.SessionManagementFilter@36b9cb99, org.springframework.security.web.access.ExceptionTranslationFilter@631cb129, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2be21396]
+21-04-18 21:11:58.834 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 21:11:59.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 21:11:59.427 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 21:11:59.440 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.813 seconds (JVM running for 7.228)
+21-04-18 21:14:25.419 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 21:14:25.423 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 21:14:25.429 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+21-04-18 21:14:25.922 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 21:14:26.265 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 21:14:28.834 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:14:28.856 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:14:28.942 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:14:33.499 [http-nio-8888-exec-8] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:14:33.515 [http-nio-8888-exec-8] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:14:33.525 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:14:37.342 [http-nio-8888-exec-7] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:14:37.361 [http-nio-8888-exec-7] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:14:37.373 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:14:45.990 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:14:46.004 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:14:46.013 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:14:48.198 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:14:48.214 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745803864, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:14:48.223 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:15:05.462 [http-nio-8888-exec-1] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:15:05.485 [http-nio-8888-exec-1] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618653517755, totalPrice=35.0, payOrderCnt=1, username=liuersha}
+21-04-18 21:15:05.494 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"liuersha"}
+21-04-18 21:15:55.884 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618745805336, query=[{query=TF, cnt=3}, {query=c语言, cnt=11}, {query=口红, cnt=7}, {query=默认, cnt=10}, {query=恋爱心理学, cnt=1}], cnt=5, username=admin}
+21-04-18 21:15:55.899 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618653517755, totalPrice=35.0, payOrderCnt=1, username=liuersha}
+21-04-18 21:15:55.906 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"liuersha"}
+21-04-18 21:23:39.657 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 21:23:39.397 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 23636 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 21:23:39.710 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 21:23:41.120 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 21:23:41.142 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 21:23:41.146 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 21:23:41.150 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 21:23:41.317 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 21:23:41.320 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1551 ms
+21-04-18 21:23:43.503 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a545b0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3234474, org.springframework.security.web.header.HeaderWriterFilter@6d0be7ab, org.springframework.security.web.authentication.logout.LogoutFilter@3b4a1a75, com.kayn.auth.JWTAuthenticationFilter@2be21396, com.kayn.auth.JWTAuthorizationFilter@124dac75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d20e575, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9301672, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@315105f, org.springframework.security.web.session.SessionManagementFilter@6ef60295, org.springframework.security.web.access.ExceptionTranslationFilter@4da39ca9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cb702ce]
+21-04-18 21:23:43.739 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 21:23:44.329 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 21:23:44.356 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 21:23:44.379 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 5.931 seconds (JVM running for 7.311)
+21-04-18 21:24:52.296 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 21:24:52.298 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 21:24:52.303 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-18 21:24:52.717 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 21:24:53.049 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 21:24:54.648 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752236048, query=[{query=c语言, cnt=2}], cnt=2, username=liuersha}
+21-04-18 21:24:54.715 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"liuersha"}
+21-04-18 21:25:14.830 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752294889, query=[{query=c语言, cnt=2}], cnt=2, username=liuersha}
+21-04-18 21:25:14.842 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"飞机杯","username":"liuersha"}
+21-04-18 21:25:27.707 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"productId":"595817341862","catName":"成人用品/情趣用品","username":"liuersha"}
+21-04-18 21:25:56.141 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"productId":"576666215537","catName":"成人用品/情趣用品","username":"liuersha"}
+21-04-18 21:26:08.823 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"631406389573","catName":"成人用品/情趣用品","username":"liuersha"}
+21-04-18 21:28:13.406 [http-nio-8888-exec-2] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:13.416 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:25.195 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"45886329270","catName":"书籍/杂志/报纸","username":"liuersha"}
+21-04-18 21:28:33.030 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"productId":"556060049989","catName":"书籍/杂志/报纸","username":"liuersha"}
+21-04-18 21:28:44.382 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:44.392 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:45.583 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:45.590 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:46.910 [http-nio-8888-exec-1] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:46.919 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:48.875 [http-nio-8888-exec-2] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:48.883 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:50.669 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:50.676 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:52.013 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:52.020 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:53.424 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:53.429 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:28:54.452 [http-nio-8888-exec-6] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752475021, query=[{query=c语言, cnt=3}, {query=飞机杯, cnt=1}], cnt=4, username=liuersha}
+21-04-18 21:28:54.459 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:29:04.398 [http-nio-8888-exec-7] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752534930, query=[{query=c语言, cnt=3}, {query=java, cnt=8}, {query=飞机杯, cnt=1}], cnt=12, username=liuersha}
+21-04-18 21:29:04.414 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:29:17.366 [http-nio-8888-exec-1] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752534930, query=[{query=c语言, cnt=3}, {query=java, cnt=8}, {query=飞机杯, cnt=1}], cnt=12, username=liuersha}
+21-04-18 21:29:17.372 [http-nio-8888-exec-1] INFO  com.kayn.controller.GoodsController - {"query":"java","username":"liuersha"}
+21-04-18 21:30:27.300 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"17568723477","productImg":"https://img.alicdn.com/bao/uploaded/i1/1049653664/O1CN01kYeyVT1cw9rIz6Evf_!!1049653664-0-picasso.jpg","productName":"head first java(中文版)","productNum":1,"salePrice":39.5,"username":"liuersha"}
+21-04-18 21:30:32.428 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=17568723477, orderId=null, salePrice=39.5, productNum=1, limitNum=null, checked=1, productName=head first java(中文版), productImg=https://img.alicdn.com/bao/uploaded/i1/1049653664/O1CN01kYeyVT1cw9rIz6Evf_!!1049653664-0-picasso.jpg)]","street":"江苏徐州","tel":"17851145351","orderTotal":"39.5","username":"liuersha"}
+21-04-18 21:30:35.018 [http-nio-8888-exec-3] INFO  com.kayn.controller.OrderController - {"orderId":"118","orderTotal":"40.0","username":"liuersha"}
+21-04-18 21:32:01.816 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"beauty"}
+21-04-18 21:32:48.122 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"beauty"}
+21-04-18 21:32:49.747 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"beauty"}
+21-04-18 21:32:52.711 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"beauty"}
+21-04-18 21:33:09.049 [http-nio-8888-exec-9] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752775743, query=[{query=默认, cnt=4}], cnt=4, username=beauty}
+21-04-18 21:33:09.071 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"娃娃","username":"beauty"}
+21-04-18 21:33:31.124 [http-nio-8888-exec-2] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752775743, query=[{query=默认, cnt=4}], cnt=4, username=beauty}
+21-04-18 21:33:31.132 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"唇膜","username":"beauty"}
+21-04-18 21:33:47.879 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752775743, query=[{query=默认, cnt=4}], cnt=4, username=beauty}
+21-04-18 21:33:47.893 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"唇膜","username":"beauty"}
+21-04-18 21:33:57.102 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"productId":"583006001116","catName":"美容护肤/美体/精油","username":"beauty"}
+21-04-18 21:34:15.262 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"productId":"605058505516","catName":"美容护肤/美体/精油","username":"beauty"}
+21-04-18 21:34:22.728 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752835151, query=[{query=默认, cnt=4}, {query=娃娃, cnt=1}, {query=唇膜, cnt=2}], cnt=7, username=beauty}
+21-04-18 21:34:22.752 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"唇膜","username":"beauty"}
+21-04-18 21:34:28.627 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"526411737409","catName":"美容护肤/美体/精油","username":"beauty"}
+21-04-18 21:34:37.806 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"productId":"526411737409","catName":"美容护肤/美体/精油","username":"beauty"}
+21-04-18 21:35:01.929 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"productId":"572534297068","catName":"美容护肤/美体/精油","username":"beauty"}
+21-04-18 21:35:20.312 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752894916, query=[{query=默认, cnt=4}, {query=娃娃, cnt=1}, {query=唇膜, cnt=3}], cnt=8, username=beauty}
+21-04-18 21:35:20.328 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"唇膜","username":"beauty"}
+21-04-18 21:35:26.427 [http-nio-8888-exec-8] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752894916, query=[{query=默认, cnt=4}, {query=娃娃, cnt=1}, {query=唇膜, cnt=3}], cnt=8, username=beauty}
+21-04-18 21:35:26.434 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"唇膜","username":"beauty"}
+21-04-18 21:35:47.215 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618752894916, query=[{query=TF, cnt=3}, {query=c语言, cnt=19}, {query=口红, cnt=7}, {query=默认, cnt=11}, {query=恋爱心理学, cnt=1}], cnt=41, username=admin}
+21-04-18 21:35:47.235 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 21:55:49.207 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 21:55:48.940 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 20824 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 21:55:49.258 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 21:55:50.597 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 21:55:50.611 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 21:55:50.614 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 21:55:50.617 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 21:55:50.753 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 21:55:50.756 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1448 ms
+21-04-18 21:55:53.159 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ff54f3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@17e9bc9e, org.springframework.security.web.header.HeaderWriterFilter@3d20e575, org.springframework.security.web.authentication.logout.LogoutFilter@7fd987ef, com.kayn.auth.JWTAuthenticationFilter@14c93774, com.kayn.auth.JWTAuthorizationFilter@62a68bcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4130955c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63300c4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b74ea, org.springframework.security.web.session.SessionManagementFilter@2b4b96a4, org.springframework.security.web.access.ExceptionTranslationFilter@6ef60295, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b73433]
+21-04-18 21:55:53.359 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 21:55:54.160 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 21:55:54.185 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 21:55:54.202 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 6.263 seconds (JVM running for 8.002)
+21-04-18 21:56:50.712 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: 8IHW5aGzRi-g1zTpcBo8bg
+21-04-18 21:56:50.367 [main] INFO  com.kayn.KaynApplication - Starting KaynApplication using Java 1.8.0_201 on DESKTOP-T20LVA9 with PID 11012 (P:\Kayn\kayn\kayn-web\target\classes started by Slimshady in P:\Kayn\kayn)
+21-04-18 21:56:50.766 [main] INFO  com.kayn.KaynApplication - No active profile set, falling back to default profiles: default
+21-04-18 21:56:52.276 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+21-04-18 21:56:52.290 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+21-04-18 21:56:52.292 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21-04-18 21:56:52.295 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.43]
+21-04-18 21:56:52.415 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21-04-18 21:56:52.417 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1581 ms
+21-04-18 21:56:54.695 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b61bf11, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b4b96a4, org.springframework.security.web.header.HeaderWriterFilter@3234474, org.springframework.security.web.authentication.logout.LogoutFilter@d3f4505, com.kayn.auth.JWTAuthenticationFilter@40247d48, com.kayn.auth.JWTAuthorizationFilter@3ff54f3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17e9bc9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2577a95d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14c93774, org.springframework.security.web.session.SessionManagementFilter@3d20e575, org.springframework.security.web.access.ExceptionTranslationFilter@6d0be7ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b88b8e]
+21-04-18 21:56:54.870 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+21-04-18 21:56:55.507 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+21-04-18 21:56:55.525 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+21-04-18 21:56:55.538 [main] INFO  com.kayn.KaynApplication - Started KaynApplication in 6.191 seconds (JVM running for 7.635)
+21-04-18 21:57:30.226 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-04-18 21:57:30.229 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+21-04-18 21:57:30.233 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+21-04-18 21:57:30.651 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21-04-18 21:57:30.987 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21-04-18 21:57:33.271 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754213846, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:57:33.289 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754215404, query=[{query=TF, cnt=3}, {query=c语言, cnt=20}, {query=口红, cnt=7}, {query=默认, cnt=11}, {query=恋爱心理学, cnt=1}], cnt=42, username=admin}
+21-04-18 21:57:33.297 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754213108, preferTel=[{cnt=1, tel=15150006826}, {cnt=3, tel=17851145351}], username=admin}
+21-04-18 21:57:33.306 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754214603, preferCat=[{cat=男装, cnt=5}, {cat=彩妆/香水/美妆工具, cnt=9}, {cat=女鞋, cnt=1}, {cat=商务/设计服务, cnt=2}], cnt=17, username=admin}
+21-04-18 21:57:33.314 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754213846, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:57:33.322 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754213846, totalPrice=527.0, payOrderCnt=4, username=admin}
+21-04-18 21:57:33.331 [http-nio-8888-exec-3] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618754215404, query=[{query=TF, cnt=3}, {query=c语言, cnt=20}, {query=口红, cnt=7}, {query=默认, cnt=11}, {query=恋爱心理学, cnt=1}], cnt=42, username=admin}
+21-04-18 21:57:33.383 [http-nio-8888-exec-3] INFO  com.kayn.controller.GoodsController - {"query":"c语言","username":"admin"}
+21-04-18 22:13:00.110 [http-nio-8888-exec-2] ERROR com.kayn.auth.JWTAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 用户不存在
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at com.kayn.auth.JWTAuthenticationFilter.attemptAuthentication(JWTAuthenticationFilter.java:48) ~[classes/:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: java.lang.RuntimeException: 用户不存在
+	at com.kayn.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:38) ~[classes/:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.5.jar:5.4.5]
+	... 53 more
+21-04-18 22:13:04.073 [http-nio-8888-exec-5] ERROR com.kayn.auth.JWTAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 用户不存在
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.5.jar:5.4.5]
+	at com.kayn.auth.JWTAuthenticationFilter.attemptAuthentication(JWTAuthenticationFilter.java:48) ~[classes/:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: java.lang.RuntimeException: 用户不存在
+	at com.kayn.service.impl.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:38) ~[classes/:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.5.jar:5.4.5]
+	... 53 more
+21-04-18 22:13:42.650 [http-nio-8888-exec-9] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"xiaoli"}
+21-04-18 22:14:50.381 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755235387, query=[{query=默认, cnt=1}], cnt=1, username=xiaoli}
+21-04-18 22:14:50.408 [http-nio-8888-exec-5] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755235387, query=[{query=默认, cnt=1}], cnt=1, username=xiaoli}
+21-04-18 22:14:50.414 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"防晒霜","username":"xiaoli"}
+21-04-18 22:14:57.503 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"563083746568","productImg":"https://img.alicdn.com/bao/uploaded/i2/3421591432/O1CN01S8pdv31MRtq8IsOL8-3421591432.jpg","productName":"鹿晗同款玥之秘水晶防晒喷雾霜清爽","productNum":1,"salePrice":89.9,"username":"xiaoli"}
+21-04-18 22:15:01.545 [http-nio-8888-exec-7] INFO  com.kayn.controller.GoodsController - {"productId":"563083746568","catName":"美容护肤/美体/精油","username":"xiaoli"}
+21-04-18 22:15:24.383 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755295150, query=[{query=防晒霜, cnt=1}, {query=默认, cnt=1}], cnt=2, username=xiaoli}
+21-04-18 22:15:24.420 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755295150, query=[{query=防晒霜, cnt=1}, {query=默认, cnt=1}], cnt=2, username=xiaoli}
+21-04-18 22:15:24.427 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"防晒霜","username":"xiaoli"}
+21-04-18 22:15:30.440 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755295150, query=[{query=防晒霜, cnt=1}, {query=默认, cnt=1}], cnt=2, username=xiaoli}
+21-04-18 22:15:30.460 [http-nio-8888-exec-4] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755295150, query=[{query=防晒霜, cnt=1}, {query=默认, cnt=1}], cnt=2, username=xiaoli}
+21-04-18 22:15:30.465 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"防晒霜","username":"xiaoli"}
+21-04-18 22:15:42.003 [http-nio-8888-exec-8] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"563083746568","productImg":"https://img.alicdn.com/bao/uploaded/i2/3421591432/O1CN01S8pdv31MRtq8IsOL8-3421591432.jpg","productName":"鹿晗同款玥之秘水晶防晒喷雾霜清爽","productNum":1,"salePrice":89.9,"username":"xiaoli"}
+21-04-18 22:16:28.270 [http-nio-8888-exec-2] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=593335380845, orderId=null, salePrice=138.0, productNum=1, limitNum=null, checked=1, productName=小颠儿dr.g隔离二合一正品不防晒霜, productImg=https://img.alicdn.com/bao/uploaded/i3/2695307155/O1CN01bwlD1R22j2VWsiiKM_!!2695307155.jpg), OrderGood(id=null, productId=563083746568, orderId=null, salePrice=89.9, productNum=1, limitNum=null, checked=1, productName=鹿晗同款玥之秘水晶防晒喷雾霜清爽, productImg=https://img.alicdn.com/bao/uploaded/i2/3421591432/O1CN01S8pdv31MRtq8IsOL8-3421591432.jpg), OrderGood(id=null, productId=563083746568, orderId=null, salePrice=89.9, productNum=1, limitNum=null, checked=1, productName=鹿晗同款玥之秘水晶防晒喷雾霜清爽, productImg=https://img.alicdn.com/bao/uploaded/i2/3421591432/O1CN01S8pdv31MRtq8IsOL8-3421591432.jpg)]","street":"北京","tel":"15150006826","orderTotal":"317.8","username":"xiaoli"}
+21-04-18 22:16:30.849 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"orderId":"119","orderTotal":"318.0","username":"xiaoli"}
+21-04-18 22:20:00.577 [http-nio-8888-exec-6] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=615069296048, orderId=null, salePrice=265.0, productNum=1, limitNum=null, checked=1, productName=简单有态度~麻制圆领t恤,@c粉退换, productImg=https://img.alicdn.com/bao/uploaded/i1/1706430317/O1CN01ix9g9O1EDE95h1Xhm_!!1706430317.jpg), OrderGood(id=null, productId=581976122106, orderId=null, salePrice=359.0, productNum=1, limitNum=null, checked=1, productName=【默认微瑕售完无补】韦恩真皮单鞋, productImg=https://img.alicdn.com/bao/uploaded/i3/2358402002/O1CN018429ch1QexasmuPJ2_!!0-item_pic.jpg), OrderGood(id=null, productId=640062309075, orderId=null, salePrice=1.8, productNum=1, limitNum=null, checked=1, productName=材质素材纹理模型球包生锈金属车漆, productImg=https://img.alicdn.com/bao/uploaded/i4/2200739792764/O1CN01aCdUkJ1WHxOPcjjaZ_!!2200739792764.jpg), OrderGood(id=null, productId=588793831206, orderId=null, salePrice=4.9, productNum=1, limitNum=null, checked=1, productName=3款c4d彩电工程文件电视机模型, productImg=https://img.alicdn.com/bao/uploaded/i3/647877849/O1CN01LRQjcH27qtDxf9JQz_!!647877849.jpg), OrderGood(id=null, productId=590078451351, orderId=null, salePrice=2.9, productNum=1, limitNum=null, checked=1, productName=30款c4d窗帘工程模型文件默认材质, productImg=https://img.alicdn.com/bao/uploaded/i4/647877849/O1CN01do4YSf27qtEHiqEqW_!!647877849.jpg), OrderGood(id=null, productId=588767321616, orderId=null, salePrice=1.2, productNum=1, limitNum=null, checked=1, productName=c4d家居摆件柜子工程默认壁柜模型, productImg=https://img.alicdn.com/bao/uploaded/i1/647877849/O1CN01mi3mwv27qtE27p96Z_!!647877849.jpg), OrderGood(id=null, productId=586351512614, orderId=null, salePrice=108.0, productNum=1, limitNum=null, checked=1, productName=默认灰色男短袖韩版印花中袖潮衬衫, productImg=https://img.alicdn.com/bao/uploaded/i4/2206937308/O1CN01XH7bF023r6wc8p88G_!!0-item_pic.jpg)]","street":"江苏南京","tel":"2787267267","orderTotal":"742.8","username":"zhangsan"}
+21-04-18 22:20:03.582 [http-nio-8888-exec-2] INFO  com.kayn.controller.OrderController - {"orderId":"120","orderTotal":"743.0","username":"zhangsan"}
+21-04-18 22:20:05.461 [http-nio-8888-exec-6] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"zhangsan"}
+21-04-18 22:20:13.914 [http-nio-8888-exec-2] INFO  com.kayn.controller.GoodsController - {"query":"ps4","username":"zhangsan"}
+21-04-18 22:20:16.030 [http-nio-8888-exec-3] INFO  com.kayn.controller.CartController - {"checked":1,"productId":"616602663970","productImg":"https://img.alicdn.com/bao/uploaded/i1/1708198091/O1CN015P2zri29djEziXu1T_!!1708198091-0-picasso.jpg","productName":"小霸王4k连电视家用体感经典红白机","productNum":1,"salePrice":568.0,"username":"zhangsan"}
+21-04-18 22:20:19.708 [http-nio-8888-exec-4] INFO  com.kayn.controller.GoodsController - {"query":"ps4","username":"zhangsan"}
+21-04-18 22:20:23.192 [http-nio-8888-exec-8] INFO  com.kayn.controller.GoodsController - {"query":"ps4","username":"zhangsan"}
+21-04-18 22:20:29.658 [http-nio-8888-exec-1] INFO  com.kayn.controller.OrderController - {"orderGoodList":"[OrderGood(id=null, productId=616602663970, orderId=null, salePrice=568.0, productNum=1, limitNum=null, checked=1, productName=小霸王4k连电视家用体感经典红白机, productImg=https://img.alicdn.com/bao/uploaded/i1/1708198091/O1CN015P2zri29djEziXu1T_!!1708198091-0-picasso.jpg)]","street":"江苏南京","tel":"2787267267","orderTotal":"568.0","username":"zhangsan"}
+21-04-18 22:20:33.307 [http-nio-8888-exec-8] INFO  com.kayn.controller.OrderController - {"orderId":"121","orderTotal":"568.0","username":"zhangsan"}
+21-04-18 22:20:45.967 [http-nio-8888-exec-5] INFO  com.kayn.controller.GoodsController - {"query":"默认","username":"zhangsan"}
+21-04-18 22:21:36.960 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755654132, totalPrice=1311.0, payOrderCnt=2, username=zhangsan}
+21-04-18 22:21:36.984 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755655690, query=[{query=ps4, cnt=3}, {query=默认, cnt=2}], cnt=5, username=zhangsan}
+21-04-18 22:21:36.999 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755653410, preferTel=[{cnt=2, tel=2787267267}], username=zhangsan}
+21-04-18 22:21:37.016 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755654132, totalPrice=1311.0, payOrderCnt=2, username=zhangsan}
+21-04-18 22:21:37.028 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755654132, totalPrice=1311.0, payOrderCnt=2, username=zhangsan}
+21-04-18 22:21:37.040 [http-nio-8888-exec-10] INFO  com.kayn.client.EsClient - sourceAsMap{timeStamp=1618755655690, query=[{query=ps4, cnt=3}, {query=默认, cnt=2}], cnt=5, username=zhangsan}
+21-04-18 22:21:37.044 [http-nio-8888-exec-10] INFO  com.kayn.controller.GoodsController - {"query":"ps4","username":"zhangsan"}
+21-04-18 22:22:08.871 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9/192.168.136.1:9092) could not be established. Broker may not be available.
+21-04-18 22:22:09.044 [kafka-producer-network-thread | producer-1] WARN  org.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 0 (DESKTOP-T20LVA9/172.20.10.3:9092) could not be established. Broker may not be available.
+21-04-18 22:37:54.933 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s499ms849µs700ns).

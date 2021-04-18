@@ -2,7 +2,7 @@ package com.kayn.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.kayn.client.TaobaokeApiClient;
+import com.kayn.client.HttpClient;
 import com.kayn.pojo.good.Good;
 import com.kayn.pojo.good.GoodDetail;
 import com.kayn.pojo.good.GoodPage;
@@ -35,10 +35,10 @@ public class GoodsServiceImpl implements GoodsService {
     private String adzone_id;
 
     @Resource
-    private TaobaokeApiClient taobaokeApiClient;
+    private HttpClient taobaokeApiClient;
 
 
-    public Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Integer priceGt, Integer priceLte) {
+    public Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Double priceGt, Double priceLte) {
         Result<GoodPage> result = new Result<>();
         GoodPage goodPage = new GoodPage();
 
