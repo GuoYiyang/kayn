@@ -3,21 +3,21 @@ package com.kayn.service.impl;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.kayn.client.HttpClient;
-import com.kayn.pojo.good.Good;
-import com.kayn.pojo.good.GoodDetail;
-import com.kayn.pojo.good.GoodPage;
-import com.kayn.pojo.good.PanelResult;
+import com.kayn.pojo.good.*;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
+import com.kayn.service.RecommenderService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 @Service
 public class GoodsServiceImpl implements GoodsService {
@@ -36,6 +36,9 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Resource
     private HttpClient taobaokeApiClient;
+
+    @Resource
+    private RecommenderService recommenderService;
 
 
     public Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Double priceGt, Double priceLte) {
@@ -56,6 +59,8 @@ public class GoodsServiceImpl implements GoodsService {
             } else if (sort == -1){
                 map.put("sort", "price_des");
             }
+        } else {
+            map.put("sort", "total_sales_des");
         }
         if (priceGt != null) {
             map.put("end_price", String.valueOf(priceGt));
@@ -161,6 +166,109 @@ public class GoodsServiceImpl implements GoodsService {
             result.setTimestamp(new Date().getTime());
         }
         return result;
+    }
+
+    @Override
+    public Result<List<PanelResult>> getGoodHome(String username) {
+        Result<List<PanelResult>> result = new Result<>();
+        List<PanelResult> resultList = new ArrayList<>();
+        String preferCat = recommenderService.getPreferCat(username);
+        String mostQuery = recommenderService.getTotalMostQuery(username);
+
+        try {
+            int id = 0, type = 1, sortOrder = 0, position = 0, limitNum = 8, status = 1;
+
+            // 搜索最多关键词板块
+            PanelResult panelResult = new PanelResult();
+            if (mostQuery != null) {
+                panelResult.setName("为您推荐商品：" + mostQuery);
+            } else {
+                panelResult.setName("为您推荐商品：默认");
+            }
+            List<PanelContents> panelContentsList = getPanelContents(mostQuery, 4);
+            panelResult.setId(id ++)
+                    .setType(type ++)
+                    .setSortOrder(sortOrder ++)
+                    .setPosition(position)
+                    .setLimitNum(limitNum)
+                    .setStatus(status)
+                    .setPanelContents(panelContentsList);
+            resultList.add(panelResult);
+
+            // 推荐类别板块
+            String[] split = preferCat.split("/");
+            for (String s : split) {
+                List<PanelContents> panelContents = getPanelContents(s, 2);
+                PanelResult panelRes = new PanelResult();
+                panelRes.setName("为您推荐以下类别：" + s)
+                        .setId(id ++)
+                        .setType(type)
+                        .setSortOrder(sortOrder ++)
+                        .setPosition(position)
+                        .setLimitNum(limitNum)
+                        .setStatus(status)
+                        .setPanelContents(panelContents);
+                resultList.add(panelRes);
+            }
+
+            result.setSuccess(true)
+                    .setCode(200)
+                    .setMessage("获取首页数据成功")
+                    .setResult(resultList)
+                    .setTimestamp(System.currentTimeMillis());
+
+        } catch (Exception e) {
+           e.printStackTrace();
+            result.setSuccess(false)
+                    .setCode(500)
+                    .setMessage("获取首页数据失败")
+                    .setTimestamp(System.currentTimeMillis());
+        }
+
+        return result;
+    }
+
+    public List<PanelContents> getPanelContents(String q, Integer pageSize) throws Exception {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("method", "taobao.tbk.sc.material.optional");
+        map.put("usertoken", usertoken);
+        map.put("site_id", site_id);
+        map.put("adzone_id", adzone_id);
+        map.put("sort", "total_sales_des");
+        map.put("q", q);
+        map.put("page_size", String.valueOf(pageSize));
+        map.put("page_no", String.valueOf(1));
+
+        String res = taobaokeApiClient.getData(url, map);
+
+        try {
+            // 获取返回结果
+            JSONObject jsonObject = JSONObject.parseObject(res);
+            // mapData
+            JSONArray mapData = jsonObject.getJSONObject("result_list").getJSONArray("map_data");
+
+            int sortOrder = 0;
+            List<PanelContents> panelContentsList = new ArrayList<>();
+
+            for (Object data : mapData) {
+                JSONObject jsonGood = (JSONObject) data;
+                PanelContents panelContents = new PanelContents();
+                panelContents.setPanelId(2);
+                panelContents.setType(2);
+                panelContents.setProductId(jsonGood.getLong("item_id"));
+                panelContents.setSortOrder(sortOrder ++);
+                panelContents.setPicUrl(jsonGood.getString("pict_url"));
+                panelContents.setSalePrice(jsonGood.getDouble("zk_final_price"));
+                panelContents.setProductName(jsonGood.getString("short_title"));
+                panelContents.setSubTitle(jsonGood.getString("nick"));
+                panelContents.setProductImageBig(jsonGood.getString("pict_url"));
+                panelContentsList.add(panelContents);
+            }
+            return panelContentsList;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception("error");
+        }
     }
 
     @Override

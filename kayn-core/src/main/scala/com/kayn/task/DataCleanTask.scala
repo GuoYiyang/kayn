@@ -35,6 +35,11 @@ case class Cat(
                 cnt: Int
               )
 
+case class Address(
+                  address: String,
+                  cnt: Int
+                  )
+
 case class Query(
                 query: String,
                 cnt: Int
@@ -46,6 +51,12 @@ case class PreferTel(
                    preferTel: mutable.MutableList[Tel],
                    timeStamp: Long
                    )
+
+case class PreferAddress(
+                      username: String,
+                      preferAddress: mutable.MutableList[Address],
+                      timeStamp: Long
+                    )
 
 /**
  * 用户最喜爱的类别
@@ -216,6 +227,30 @@ object DataCleanTask {
         PreferTel(x._1, list, System.currentTimeMillis())
       })
       .saveToEs("prefer_tel", writeConfig)
+
+    // 统计最常用的地址
+    addOrderEsRDD
+      .map(x => {
+        val doc = x._2("doc").asInstanceOf[mutable.Map[String, String]]
+        (doc("username"), doc("street"))
+      })
+      .map(x => {
+        val key = x._1 + "_" + x._2
+        (key,1)
+      })
+      .reduceByKey(_ + _)
+      .map(x => {
+        (x._1.split("_")(0),(x._1.split("_")(1), x._2))
+      })
+      .groupByKey()
+      .map(x => {
+        var list = mutable.MutableList[Address]()
+        x._2.foreach(y => {
+          list += Address(y._1, y._2)
+        })
+        PreferAddress(x._1, list, System.currentTimeMillis())
+      })
+      .saveToEs("prefer_address", writeConfig)
 
 
     // 统计今日订单消费金额

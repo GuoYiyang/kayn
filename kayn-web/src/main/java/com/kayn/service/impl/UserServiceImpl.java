@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService {
         recommenderService.getTotalMostQuery(username);
         recommenderService.getPreferTel(username);
         recommenderService.getPreferCat(username);
+        recommenderService.getPreferAddress(username);
         recommenderService.getTotalPayCnt(username);
         recommenderService.getTotalPayMoney(username);
     }

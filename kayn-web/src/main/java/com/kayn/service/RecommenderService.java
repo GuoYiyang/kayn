@@ -12,6 +12,13 @@ public interface RecommenderService {
     String getPreferTel(String username);
 
     /**
+     * 最常用收货地址
+     * @param username 用户名
+     * @return String
+     */
+    String getPreferAddress(String username);
+
+    /**
      * 最常浏览标签
      * @param username 用户名
      * @return String

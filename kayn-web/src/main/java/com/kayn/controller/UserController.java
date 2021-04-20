@@ -31,6 +31,7 @@ public class UserController {
     @PostMapping("/edit")
     public Result<UserInfo> editUser(@RequestBody JSONObject jsonObject) {
         UserInfo userInfo = new UserInfo();
+        userService.refreshUser(jsonObject.getString("username"));
         userInfo.setUsername(jsonObject.getString("username"))
                 .setPhone(jsonObject.getString("phone"))
                 .setEmail(jsonObject.getString("email"))

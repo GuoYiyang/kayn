@@ -31,6 +31,17 @@
                 </Pins>
               </value>
             </entry>
+            <entry>
+              <key>
+                <RunConfigurationRef>
+                  <option name="icon" value="SpringBoot.svg" />
+                  <option name="name" value="KaynApplication" />
+                </RunConfigurationRef>
+              </key>
+              <value>
+                <Pins />
+              </value>
+            </entry>
           </map>
         </option>
       </PinnedGrepConsolesState>

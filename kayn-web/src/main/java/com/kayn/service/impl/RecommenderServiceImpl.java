@@ -37,6 +37,26 @@ public class RecommenderServiceImpl implements RecommenderService {
     }
 
     @Override
+    public String getPreferAddress(String username) {
+        Map<String, Object> map = EsClient.getData("prefer_address", username);
+        String res = null;
+        System.out.println("getPreferAddress");
+        if (map != null) {
+            List<Map<String, Object>> preferAddressList = (List<Map<String, Object>>) map.get("preferAddress");
+            int maxCnt = 0;
+            for (Map<String, Object> tel : preferAddressList) {
+                if (Integer.parseInt(tel.get("cnt").toString()) > maxCnt) {
+                    maxCnt = Integer.parseInt(tel.get("cnt").toString());
+                    res = tel.get("address").toString();
+                }
+            }
+            System.out.println(res);
+            userLabelMapper.update(new UserLabel().setAddress(res), new UpdateWrapper<UserLabel>().eq("username", username));
+        }
+        return res;
+    }
+
+    @Override
     public String getPreferCat(String username) {
         Map<String, Object> map = EsClient.getData("prefer_cat", username);
         String res = null;
@@ -85,13 +105,13 @@ public class RecommenderServiceImpl implements RecommenderService {
             Integer payCnt = Integer.parseInt(map.get("payOrderCnt").toString());
             res = totalPrice / payCnt;
             UserLabel userLabel = new UserLabel().setTotalPayAvg(res);
-            if (res < 100) {
+            if (res < 1000) {
                 userLabel.setPriceRange(0);
-            } else if (res >= 100 && res < 500) {
+            } else if (res >= 1000 && res < 5000) {
                 userLabel.setPriceRange(1);
-            } else if (res >= 500 && res < 1000) {
+            } else if (res >= 5000 && res < 10000) {
                 userLabel.setPriceRange(2);
-            } else if (res >= 1000) {
+            } else if (res >= 10000) {
                 userLabel.setPriceRange(3);
             }
             userLabelMapper.update(userLabel, new UpdateWrapper<UserLabel>().eq("username", username));
@@ -115,9 +135,9 @@ public class RecommenderServiceImpl implements RecommenderService {
                     }
                 }
             }
-            UserLabel userLabel = new UserLabel().setLastMostQuery(res);
+            UserLabel userLabel = new UserLabel().setTotalMostQuery(res);
             int cnt = Integer.parseInt(map.get("cnt").toString());
-            if (cnt < 10) {
+            if (cnt < 20) {
                 userLabel.setLive("低活跃度");
             } else if (cnt < 50){
                 userLabel.setLive("中活跃度");

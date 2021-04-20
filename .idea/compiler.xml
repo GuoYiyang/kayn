@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="kayn-admin" />
         <module name="kayn-web" />
         <module name="DataLoader" />
         <module name="untitled" />
@@ -17,6 +18,7 @@
       <module name="DataLoader" target="1.8" />
       <module name="dataloader" target="1.8" />
       <module name="kayn" target="1.8" />
+      <module name="kayn-admin" target="1.8" />
       <module name="kayn-core" target="1.8" />
       <module name="kayn-recommender" target="1.8" />
       <module name="kayn-web" target="1.8" />
@@ -28,6 +30,7 @@
       <module name="DataLoader" options="-parameters" />
       <module name="dataloader" options="-parameters" />
       <module name="kayn" options="" />
+      <module name="kayn-admin" options="-parameters" />
       <module name="kayn-core" options="-parameters" />
       <module name="kayn-recommender" options="" />
       <module name="kayn-web" options="-parameters" />

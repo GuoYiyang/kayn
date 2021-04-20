@@ -5,6 +5,8 @@ import com.kayn.pojo.good.GoodPage;
 import com.kayn.pojo.good.PanelResult;
 import com.kayn.result.Result;
 
+import java.util.List;
+
 public interface GoodsService {
 
     /**
@@ -25,6 +27,13 @@ public interface GoodsService {
      * @return Result<GoodDetail>
      */
     Result<GoodDetail> getGoodDetail(Long productId);
+
+    /**
+     * 获取首页推荐
+     * @param username 用户名
+     * @return Result<PanelResult>
+     */
+    Result<List<PanelResult>> getGoodHome(String username);
 
 
     Result<PanelResult> getRecommend(Long productId);

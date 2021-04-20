@@ -15,7 +15,7 @@ public class PanelContents {
     private String picUrl;
     private long created;
     private long updated;
-    private int salePrice;
+    private Double salePrice;
     private String productName;
     private String subTitle;
     private String productImageBig;
