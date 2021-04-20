@@ -36,5 +36,5 @@ public interface GoodsService {
     Result<List<PanelResult>> getGoodHome(String username);
 
 
-    Result<PanelResult> getRecommend(Long productId);
+    Result<List<PanelResult>> getRecommend(String username);
 }

@@ -40,7 +40,6 @@ public class RecommenderServiceImpl implements RecommenderService {
     public String getPreferAddress(String username) {
         Map<String, Object> map = EsClient.getData("prefer_address", username);
         String res = null;
-        System.out.println("getPreferAddress");
         if (map != null) {
             List<Map<String, Object>> preferAddressList = (List<Map<String, Object>>) map.get("preferAddress");
             int maxCnt = 0;

@@ -52,7 +52,7 @@ public class GoodsController {
         if (username != null) {
             userService.refreshUser(username);
             String mostQuery = recommenderService.getTotalMostQuery(username);
-            if (q.equals("")) {
+            if (q == "") {
                 if (mostQuery != null) {
                     q = mostQuery;
                 } else {
@@ -63,17 +63,20 @@ public class GoodsController {
             info.put("username", username);
             info.put("query", q);
             logger.info(JSONObject.toJSONString(info));
+        } else {
+            q = "默认";
         }
         return goodsService.getGoodPage(q, pageSize, pageNo, sort, priceGt, priceLte);
     }
 
     /**
-     * 首页数据接口，模拟假数据
+     * 首页数据接口
      * @return String
      */
     @GetMapping("/home")
     public Result<List<PanelResult>> getGoodHome(@RequestParam(value = "username", required = false) String username) {
         if (username != null) {
+            userService.refreshUser(username);
             return goodsService.getGoodHome(username);
         } else {
             return goodsService.getGoodHome("测试用户");
@@ -89,6 +92,7 @@ public class GoodsController {
     public Result<GoodDetail> getGoodDetail(@RequestBody JSONObject jsonObject) {
         Long productId = jsonObject.getLong("productId");
         String username = jsonObject.getString("username");
+        userService.refreshUser(username);
         Result<GoodDetail> result = goodsService.getGoodDetail(productId);
         HashMap<String, String> info = new HashMap<>();
         info.put("productId", productId.toString());
@@ -100,11 +104,16 @@ public class GoodsController {
 
     /**
      * 获取商品推荐
-     * @param productId 商品ID
+     * @param username 用户名
      * @return Result<PanelResult>
      */
     @GetMapping("/recommend")
-    public Result<PanelResult> getRecommend(@RequestParam(value = "productId", required = false) Long productId) {
-        return goodsService.getRecommend(productId);
+    public Result<List<PanelResult>> getRecommend(@RequestParam(value = "username", required = false) String username) {
+        if (username != null) {
+            userService.refreshUser(username);
+            return goodsService.getRecommend(username);
+        } else {
+            return goodsService.getRecommend("测试用户");
+        }
     }
 }

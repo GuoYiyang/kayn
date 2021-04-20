@@ -176,16 +176,60 @@ public class GoodsServiceImpl implements GoodsService {
         String mostQuery = recommenderService.getTotalMostQuery(username);
 
         try {
-            int id = 0, type = 1, sortOrder = 0, position = 0, limitNum = 8, status = 1;
+            int id = 0, type = 0, sortOrder = 0, position = 0, limitNum = 8, status = 1;
+
+            // 轮播图板块
+            PanelResult pr = new PanelResult();
+            List<PanelContents> pcs = new ArrayList<>();
+            PanelContents pc1 = new PanelContents()
+                    .setType(0)
+                    .setPanelId(7)
+                    .setSortOrder(1)
+                    .setFullUrl("https://re.taobao.com/action_ecpm_home?ali_trackid=19_cb52ba16d669bce18bca1094e50e3ca2")
+                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg")
+                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg");
+
+            PanelContents pc2 = new PanelContents()
+                    .setType(0)
+                    .setPanelId(7)
+                    .setSortOrder(2)
+                    .setFullUrl("https://re.taobao.com/?pid=&ali_trackid=19_16910387271a9217ff3cb06e58df15eb")
+                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg")
+                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg");
+
+            PanelContents pc3 = new PanelContents()
+                    .setType(0)
+                    .setPanelId(7)
+                    .setSortOrder(3)
+                    .setFullUrl("https://re.taobao.com/action_ecpm_home?ali_trackid=19_fdb896ac70e18d75c8b5460e40c9a08d")
+                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg")
+                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg");
+
+            pcs.add(pc1);
+            pcs.add(pc2);
+            pcs.add(pc3);
+            pr.setId(7)
+                    .setName("轮播图")
+                    .setType(type ++)
+                    .setSortOrder(sortOrder ++)
+                    .setPosition(position)
+                    .setLimitNum(limitNum)
+                    .setStatus(status)
+                    .setPanelContents(pcs);
+            resultList.add(pr);
+
 
             // 搜索最多关键词板块
             PanelResult panelResult = new PanelResult();
+            List<PanelContents> panelContentsList;
             if (mostQuery != null) {
                 panelResult.setName("为您推荐商品：" + mostQuery);
+                panelContentsList = getPanelContents(mostQuery, 4);
             } else {
                 panelResult.setName("为您推荐商品：默认");
+                panelContentsList = getPanelContents("默认", 4);
             }
-            List<PanelContents> panelContentsList = getPanelContents(mostQuery, 4);
+
             panelResult.setId(id ++)
                     .setType(type ++)
                     .setSortOrder(sortOrder ++)
@@ -195,15 +239,29 @@ public class GoodsServiceImpl implements GoodsService {
                     .setPanelContents(panelContentsList);
             resultList.add(panelResult);
 
-            // 推荐类别板块
-            String[] split = preferCat.split("/");
-            for (String s : split) {
-                List<PanelContents> panelContents = getPanelContents(s, 2);
+            if (preferCat != null) {
+                // 推荐类别板块
+                String[] split = preferCat.split("/");
+                for (String s : split) {
+                    List<PanelContents> panelContents = getPanelContents(s, 2);
+                    PanelResult panelRes = new PanelResult();
+                    panelRes.setName("为您推荐以下类别：" + s)
+                            .setId(id ++)
+                            .setType(type)
+                            .setSortOrder(sortOrder ++)
+                            .setPosition(position)
+                            .setLimitNum(limitNum)
+                            .setStatus(status)
+                            .setPanelContents(panelContents);
+                    resultList.add(panelRes);
+                }
+            } else {
+                List<PanelContents> panelContents = getPanelContents("默认", 2);
                 PanelResult panelRes = new PanelResult();
-                panelRes.setName("为您推荐以下类别：" + s)
-                        .setId(id ++)
+                panelRes.setName("为您推荐以下类别：默认")
+                        .setId(id)
                         .setType(type)
-                        .setSortOrder(sortOrder ++)
+                        .setSortOrder(sortOrder)
                         .setPosition(position)
                         .setLimitNum(limitNum)
                         .setStatus(status)
@@ -219,6 +277,49 @@ public class GoodsServiceImpl implements GoodsService {
 
         } catch (Exception e) {
            e.printStackTrace();
+            result.setSuccess(false)
+                    .setCode(500)
+                    .setMessage("获取首页数据失败")
+                    .setTimestamp(System.currentTimeMillis());
+        }
+
+        return result;
+    }
+
+    @Override
+    public Result<List<PanelResult>> getRecommend(String username) {
+        Result<List<PanelResult>> result = new Result<>();
+        List<PanelResult> resultList = new ArrayList<>();
+
+        String mostQuery = recommenderService.getTotalMostQuery(username);
+        PanelResult panelResult = new PanelResult();
+
+        try {
+            List<PanelContents> panelContents;
+            if (mostQuery != null) {
+                panelContents = getPanelContents(mostQuery, 2);
+                panelResult.setName("为您推荐：" + mostQuery);
+            } else {
+                panelContents = getPanelContents("默认", 2);
+                panelResult.setName("为您推荐：默认");
+            }
+
+            panelResult.setType(2)
+                    .setSortOrder(6)
+                    .setPosition(0)
+                    .setLimitNum(2)
+                    .setStatus(1)
+                    .setPanelContents(panelContents);
+            resultList.add(panelResult);
+
+            result.setSuccess(true)
+                    .setCode(200)
+                    .setMessage("获取首页数据成功")
+                    .setResult(resultList)
+                    .setTimestamp(System.currentTimeMillis());
+
+        } catch (Exception e) {
+            e.printStackTrace();
             result.setSuccess(false)
                     .setCode(500)
                     .setMessage("获取首页数据失败")
@@ -271,9 +372,4 @@ public class GoodsServiceImpl implements GoodsService {
         }
     }
 
-    @Override
-    public Result<PanelResult> getRecommend(Long productId) {
-
-        return null;
-    }
 }
