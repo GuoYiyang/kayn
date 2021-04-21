@@ -15,16 +15,16 @@ case class QueryMeta(
                       query: String,
                       time: Long
                     )
-
 case class QueryCnt(
                      query: String,
                      cnt: Int
                    )
-
 case class QueryCntList(
                       username: String,
                       query: mutable.MutableList[QueryCnt]
                     )
+
+
 
 case class CatMeta(
                     username: String,
@@ -32,6 +32,15 @@ case class CatMeta(
                     cat: String,
                     time: Long
                   )
+case class CatCnt(
+                  cat: String,
+                  cnt: Int
+                 )
+case class CatCntList(
+                     username: String,
+                     cat: mutable.MutableList[CatCnt]
+                     )
+
 
 case class CartMeta(
                      username: String,
@@ -54,6 +63,11 @@ case class PayMeta(
                     orderTotal: Double,
                     time: Long
                   )
+case class PayCnt(
+                 username: String,
+                 orderTotal: Double,
+                 cnt: Int
+                 )
 
 
 object KafkaStreaming {
@@ -118,9 +132,9 @@ object KafkaStreaming {
         val queryRDD = sc.parallelize(queryList)
         queryRDD
           .map(x => {
-          val key = x.username + "_" + x.query
-          (key, 1)
-        })
+            val key = x.username + "_" + x.query
+            (key, 1)
+          })
           .reduceByKey(_ + _)
           .map(x => {
             (x._1.split("_")(0),(x._1.split("_")(1), x._2))
@@ -134,6 +148,47 @@ object KafkaStreaming {
             QueryCntList(x._1, list)
           })
           .saveToEs("user_query_cnt", EsConfig)
+      }
+
+      if (catList.nonEmpty) {
+        val catRDD = sc.parallelize(catList)
+        catRDD
+          .map(x => {
+            val key = x.username + "_" + x.cat
+            (key, 1)
+          })
+          .reduceByKey(_ + _)
+          .map(x => {
+            (x._1.split("_")(0),(x._1.split("_")(1), x._2))
+          })
+          .groupByKey()
+          .map(x => {
+            var list = mutable.MutableList[CatCnt]()
+            x._2.foreach(y => {
+              list += CatCnt(y._1, y._2)
+            })
+            CatCntList(x._1, list)
+          })
+          .saveToEs("user_cat_cnt", EsConfig)
+      }
+
+      if (payList.nonEmpty) {
+        val payRDD = sc.parallelize(payList)
+        payRDD
+          .map(x => {
+            (x.username, x.orderTotal)
+          })
+          .groupByKey()
+          .map(x => {
+            var orderTotal: Double = 0d
+            var payCnt: Int = 0
+            x._2.foreach(y => {
+              orderTotal += y
+              payCnt += 1
+            })
+            PayCnt(x._1, orderTotal, payCnt)
+          })
+          .saveToEs("user_pay_order", EsConfig)
       }
 
     })
