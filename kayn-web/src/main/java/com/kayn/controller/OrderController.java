@@ -49,20 +49,19 @@ public class OrderController {
         String streetName = jsonObject.getString("streetName");
         String tel = jsonObject.getString("tel");
         String username = jsonObject.getString("username");
-        // 记录日志
         OrderDto orderDto = new OrderDto()
                 .setUsername(username)
                 .setOrderTotal(orderTotal)
                 .setStreet(streetName)
                 .setTel(tel)
                 .setOrderGoodList(orderGoodList);
+
         // 记录日志
         HashMap<String, String> info = new HashMap<>();
         info.put("username", username);
         info.put("orderTotal", orderTotal.toString());
         info.put("street", streetName);
         info.put("tel", tel);
-        info.put("orderGoodList", orderGoodList.toString());
         logger.info(JSONObject.toJSONString(info));
         return orderService.addOrder(orderDto);
     }
@@ -122,9 +121,9 @@ public class OrderController {
         Integer orderId = jsonObject.getInteger("orderId");
         Double orderTotal = jsonObject.getDouble("orderTotal");
         String username = jsonObject.getString("username");
+
         // 记录日志
         HashMap<String, String> info = new HashMap<>();
-        info.put("orderId", orderId.toString());
         info.put("username", username);
         info.put("orderTotal", orderTotal.toString());
         logger.info(JSONObject.toJSONString(info));

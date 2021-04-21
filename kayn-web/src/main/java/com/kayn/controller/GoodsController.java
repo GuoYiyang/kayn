@@ -52,7 +52,7 @@ public class GoodsController {
         if (username != null) {
             userService.refreshUser(username);
             String mostQuery = recommenderService.getTotalMostQuery(username);
-            if (q == "") {
+            if (q.equals("")) {
                 if (mostQuery != null) {
                     q = mostQuery;
                 } else {
@@ -95,9 +95,9 @@ public class GoodsController {
         userService.refreshUser(username);
         Result<GoodDetail> result = goodsService.getGoodDetail(productId);
         HashMap<String, String> info = new HashMap<>();
-        info.put("productId", productId.toString());
         info.put("username", username);
         info.put("catName", result.getResult().getCatName());
+        info.put("productName", result.getResult().getProductName());
         logger.info(JSONObject.toJSONString(info));
         return result;
     }

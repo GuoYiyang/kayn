@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -31,15 +32,26 @@ public class CartController {
     @PostMapping("/addCart")
     public Result<MyCart> addCart(@RequestBody JSONObject jsonObject) {
         MyCart myCart = new MyCart();
+        String username = jsonObject.getString("username");
+        Double salePrice = jsonObject.getDouble("salePrice");
+        String productName = jsonObject.getString("productName");
+        Integer productNum = jsonObject.getInteger("productNum");
         myCart.setProductId(jsonObject.getString("productId"))
-                .setUsername(jsonObject.getString("username"))
-                .setSalePrice(jsonObject.getDouble("salePrice"))
-                .setProductName(jsonObject.getString("productName"))
+                .setUsername(username)
+                .setSalePrice(salePrice)
+                .setProductName(productName)
                 .setProductImg(jsonObject.getString("productImg"))
-                .setProductNum(jsonObject.getInteger("productNum"))
+                .setProductNum(productNum)
                 .setChecked(1);
+
+        HashMap<String, String> info = new HashMap<>();
+        info.put("username", username);
+        info.put("productName", productName);
+        info.put("salePrice", salePrice.toString());
+        info.put("productNum", productNum.toString());
+
         // 记录日志
-        logger.info(JSONObject.toJSONString(myCart));
+        logger.info(JSONObject.toJSONString(info));
         return cartService.addCart(myCart);
     }
 
