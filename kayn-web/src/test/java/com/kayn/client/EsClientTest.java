@@ -66,11 +66,14 @@ class EsClientTest {
     @Test
     void test5() {
         String res = null;
-        Map<String, Object> map = EsClient.getData("last_query", "admin");
+        Map<String, Object> map = EsClient.getData("user_query_cnt", "admin");
         if (map != null) {
-            List<Map<String, Object>> preferTelList = (List<Map<String, Object>>) map.get("query");
+            List<Map<String, Object>> preferQueryList = (List<Map<String, Object>>) map.get("query");
+
+
+
             int maxCnt = 0;
-            for (Map<String, Object> tel : preferTelList) {
+            for (Map<String, Object> tel : preferQueryList) {
                 if (Integer.parseInt(tel.get("cnt").toString()) > maxCnt) {
                     maxCnt = Integer.parseInt(tel.get("cnt").toString());
                     res = tel.get("query").toString();

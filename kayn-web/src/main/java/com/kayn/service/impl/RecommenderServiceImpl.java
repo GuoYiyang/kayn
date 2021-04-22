@@ -60,9 +60,9 @@ public class RecommenderServiceImpl implements RecommenderService {
         Map<String, Object> map = EsClient.getData("prefer_cat", username);
         String res = null;
         if (map != null) {
-            List<Map<String, Object>> preferTelList = (List<Map<String, Object>>) map.get("preferCat");
+            List<Map<String, Object>> preferCatList = (List<Map<String, Object>>) map.get("preferCat");
             int maxCnt = 0;
-            for (Map<String, Object> tel : preferTelList) {
+            for (Map<String, Object> tel : preferCatList) {
                 if (Integer.parseInt(tel.get("cnt").toString()) > maxCnt) {
                     maxCnt = Integer.parseInt(tel.get("cnt").toString());
                     res = tel.get("cat").toString();

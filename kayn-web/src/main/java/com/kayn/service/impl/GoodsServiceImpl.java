@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.kayn.client.HttpClient;
 import com.kayn.pojo.good.*;
+import com.kayn.recommender.DataTransform;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
 import com.kayn.service.RecommenderService;
@@ -38,7 +39,7 @@ public class GoodsServiceImpl implements GoodsService {
     private HttpClient taobaokeApiClient;
 
     @Resource
-    private RecommenderService recommenderService;
+    private DataTransform dataTransform;
 
 
     public Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Double priceGt, Double priceLte) {
@@ -172,8 +173,8 @@ public class GoodsServiceImpl implements GoodsService {
     public Result<List<PanelResult>> getGoodHome(String username) {
         Result<List<PanelResult>> result = new Result<>();
         List<PanelResult> resultList = new ArrayList<>();
-        String preferCat = recommenderService.getPreferCat(username);
-        String mostQuery = recommenderService.getTotalMostQuery(username);
+        String preferQuery = dataTransform.getPreferQuery(username);
+        String preferCat = dataTransform.getPreferCat(username);
 
         try {
             int id = 0, type = 0, sortOrder = 0, position = 0, limitNum = 8, status = 1;
@@ -222,9 +223,9 @@ public class GoodsServiceImpl implements GoodsService {
             // 搜索最多关键词板块
             PanelResult panelResult = new PanelResult();
             List<PanelContents> panelContentsList;
-            if (mostQuery != null) {
-                panelResult.setName("为您推荐商品：" + mostQuery);
-                panelContentsList = getPanelContents(mostQuery, 4);
+            if (preferQuery != null) {
+                panelResult.setName("为您推荐商品：" + preferQuery);
+                panelContentsList = getPanelContents(preferQuery, 4);
             } else {
                 panelResult.setName("为您推荐商品：默认");
                 panelContentsList = getPanelContents("默认", 4);
@@ -291,14 +292,14 @@ public class GoodsServiceImpl implements GoodsService {
         Result<List<PanelResult>> result = new Result<>();
         List<PanelResult> resultList = new ArrayList<>();
 
-        String mostQuery = recommenderService.getTotalMostQuery(username);
+        String preferQuery = dataTransform.getPreferQuery(username);
         PanelResult panelResult = new PanelResult();
 
         try {
             List<PanelContents> panelContents;
-            if (mostQuery != null) {
-                panelContents = getPanelContents(mostQuery, 2);
-                panelResult.setName("为您推荐：" + mostQuery);
+            if (preferQuery != null) {
+                panelContents = getPanelContents(preferQuery, 2);
+                panelResult.setName("为您推荐：" + preferQuery);
             } else {
                 panelContents = getPanelContents("默认", 2);
                 panelResult.setName("为您推荐：默认");

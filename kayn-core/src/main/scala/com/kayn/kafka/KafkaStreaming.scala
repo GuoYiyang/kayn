@@ -86,7 +86,7 @@ object KafkaStreaming {
       "es.write.operation" -> "upsert"
     )
 
-    val conf = new SparkConf().setAppName("SparkStreaming")
+    val conf = new SparkConf().setAppName("SparkStreaming").setMaster("local[*]")
     conf.set("es.nodes", "localhost")
     conf.set("es.port", "9200")
     conf.set("es.index.auto.create", "true")
@@ -116,14 +116,19 @@ object KafkaStreaming {
     data.foreachRDD(rdd => {
       if (!rdd.isEmpty()) {
         //数据业务逻辑处理
-        rdd.map(x => {
+        rdd
+          .filter(x => {
+            JSON.parseObject(x.value()).getString("message") != null
+          })
+          .map(x => {
           val createTime = x.timestamp()
           val value = JSON.parseObject(x.value())
           val message = value.getString("message")
           val method = JSON.parseObject(value.getString("source")).getString("method")
           dataTransform(message, method, createTime)
           (message, method, createTime)
-        }).foreach(x => {
+        })
+          .foreach(x => {
           println(x)
         })
       }

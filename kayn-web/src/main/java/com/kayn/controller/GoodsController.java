@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.kayn.pojo.good.GoodDetail;
 import com.kayn.pojo.good.GoodPage;
 import com.kayn.pojo.good.PanelResult;
+import com.kayn.recommender.DataTransform;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
 import com.kayn.service.RecommenderService;
@@ -26,10 +27,7 @@ public class GoodsController {
     private GoodsService goodsService;
 
     @Resource
-    private RecommenderService recommenderService;
-
-    @Resource
-    private UserService userService;
+    private DataTransform dataTransform;
 
     /**
      * 检索商品页接口
@@ -50,11 +48,10 @@ public class GoodsController {
                                         @RequestParam(value = "priceGt", required = false) Double priceGt,
                                         @RequestParam(value = "priceLte", required = false) Double priceLte) {
         if (username != null) {
-            userService.refreshUser(username);
-            String mostQuery = recommenderService.getTotalMostQuery(username);
+            String preferQuery = dataTransform.getPreferQuery(username);
             if (q.equals("")) {
-                if (mostQuery != null) {
-                    q = mostQuery;
+                if (preferQuery != null) {
+                    q = preferQuery;
                 } else {
                     q = "默认";
                 }
@@ -76,7 +73,6 @@ public class GoodsController {
     @GetMapping("/home")
     public Result<List<PanelResult>> getGoodHome(@RequestParam(value = "username", required = false) String username) {
         if (username != null) {
-            userService.refreshUser(username);
             return goodsService.getGoodHome(username);
         } else {
             return goodsService.getGoodHome("测试用户");
@@ -92,7 +88,6 @@ public class GoodsController {
     public Result<GoodDetail> getGoodDetail(@RequestBody JSONObject jsonObject) {
         Long productId = jsonObject.getLong("productId");
         String username = jsonObject.getString("username");
-        userService.refreshUser(username);
         Result<GoodDetail> result = goodsService.getGoodDetail(productId);
         HashMap<String, String> info = new HashMap<>();
         info.put("username", username);
@@ -110,7 +105,6 @@ public class GoodsController {
     @GetMapping("/recommend")
     public Result<List<PanelResult>> getRecommend(@RequestParam(value = "username", required = false) String username) {
         if (username != null) {
-            userService.refreshUser(username);
             return goodsService.getRecommend(username);
         } else {
             return goodsService.getRecommend("测试用户");
