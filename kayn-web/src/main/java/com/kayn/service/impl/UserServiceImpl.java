@@ -17,19 +17,6 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserInfoMapper userInfoMapper;
 
-    @Resource
-    private RecommenderService recommenderService;
-
-    @Override
-    public void refreshUser(String username) {
-        recommenderService.getTotalPayAvg(username);
-        recommenderService.getTotalMostQuery(username);
-        recommenderService.getPreferTel(username);
-        recommenderService.getPreferCat(username);
-        recommenderService.getPreferAddress(username);
-        recommenderService.getTotalPayCnt(username);
-        recommenderService.getTotalPayMoney(username);
-    }
 
     @Override
     public Result<UserInfo> editUser(UserInfo userInfo) {

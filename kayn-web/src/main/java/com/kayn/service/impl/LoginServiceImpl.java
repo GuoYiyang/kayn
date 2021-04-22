@@ -30,9 +30,6 @@ public class LoginServiceImpl implements LoginService {
     @Resource
     private UserRoleMapper userRoleMapper;
 
-    @Resource
-    private UserLabelMapper userLabelMapper;
-
     @Override
     public Result<UserInfo> checkLogin(String tokenHeader) {
         Result<UserInfo> result = new Result<>();
@@ -62,7 +59,6 @@ public class LoginServiceImpl implements LoginService {
             userMapper.insert(new User().setUsername(username).setPassword(password));
             userInfoMapper.insert(new UserInfo().setUsername(username));
             userRoleMapper.insert(new UserRole().setUsername(username).setRole("ROLE_USER"));
-            userLabelMapper.insert(new UserLabel().setUsername(username));
             result.setCode(200)
                     .setSuccess(true)
                     .setTimestamp(new Date().getTime())

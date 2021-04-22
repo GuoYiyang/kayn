@@ -1,6 +1,5 @@
 package com.kayn.service;
 
-import org.apache.kafka.common.protocol.types.Field;
 
 public interface RecommenderService {
 

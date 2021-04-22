@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 @Service
 public class TFIDF {
+    // 淘宝共有8亿件商品
     private static final Double TAOBAO_ALL_GOOD_CNT = 800000000D;
 
     @Value("${taobaoke.url}")

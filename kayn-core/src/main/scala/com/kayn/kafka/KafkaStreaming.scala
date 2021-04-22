@@ -66,7 +66,8 @@ case class PayMeta(
 case class PayCnt(
                  username: String,
                  orderTotal: Double,
-                 cnt: Int
+                 cnt: Int,
+                 lastTime: Long
                  )
 
 
@@ -191,11 +192,10 @@ object KafkaStreaming {
               orderTotal += y
               payCnt += 1
             })
-            PayCnt(x._1, orderTotal, payCnt)
+            PayCnt(x._1, orderTotal, payCnt, System.currentTimeMillis())
           })
           .saveToEs("user_pay_order", EsConfig)
       }
-
     })
 
     ssc.start()
@@ -204,29 +204,35 @@ object KafkaStreaming {
 
 
   def dataTransform(message: String, method: String, createTime: Long): Unit = {
-    val msg = JSON.parseObject(message)
-    val un = msg.getString("username")
+    try {
+      val msg = JSON.parseObject(message)
+      val un = msg.getString("username")
 
-    if (method.equals("getGoodPage")) {
-      val q = msg.getString("query")
-      queryList += QueryMeta(username = un, query = q, time = createTime)
-    } else if (method.equals("getGoodDetail")) {
-      val cn = msg.getString("catName")
-      val pn = msg.getString("productName")
-      catList += CatMeta(username = un, productName = pn, cat = cn, time = createTime)
-    } else if (method.equals("addCart")) {
-      val pn = msg.getString("productName")
-      val sp = msg.getDouble("salePrice")
-      val num = msg.getInteger("productNum")
-      cartList += CartMeta(username = un, productName = pn, salePrice = sp, productNum = num, time = createTime)
-    } else if (method.equals("addOrder")) {
-      val tel = msg.getString("tel")
-      val st = msg.getString("street")
-      val total = msg.getString("orderTotal").toDouble
-      orderList += OrderMeta(username = un, orderTotal = total, tel = tel, street = st, time = createTime)
-    } else if (method.equals("payOrder")) {
-      val total = msg.getString("orderTotal").toDouble
-      payList += PayMeta(username = un, orderTotal = total, time = createTime)
+      if (method.equals("getGoodPage")) {
+        val q = msg.getString("query")
+        queryList += QueryMeta(username = un, query = q, time = createTime)
+      } else if (method.equals("getGoodDetail")) {
+        val cn = msg.getString("catName")
+        val pn = msg.getString("productName")
+        catList += CatMeta(username = un, productName = pn, cat = cn, time = createTime)
+      } else if (method.equals("addCart")) {
+        val pn = msg.getString("productName")
+        val sp = msg.getDouble("salePrice")
+        val num = msg.getInteger("productNum")
+        cartList += CartMeta(username = un, productName = pn, salePrice = sp, productNum = num, time = createTime)
+      } else if (method.equals("addOrder")) {
+        val tel = msg.getString("tel")
+        val st = msg.getString("street")
+        val total = msg.getString("orderTotal").toDouble
+        orderList += OrderMeta(username = un, orderTotal = total, tel = tel, street = st, time = createTime)
+      } else if (method.equals("payOrder")) {
+        val total = msg.getString("orderTotal").toDouble
+        payList += PayMeta(username = un, orderTotal = total, time = createTime)
+      }
+    } catch {
+      case ex: Exception => {
+        ex.printStackTrace() // 打印到标准err
+      }
     }
   }
 
