@@ -96,5 +96,18 @@ class TaobaokeApiClientTest {
         System.out.println(res);
     }
 
+    @Test
+    void test5() {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("usertoken", "0c0d1cc55a4226364c0a914a5a04223d");
+        map.put("method", "taobao.tbk.content.get");
+        map.put("site_id", "2255900096");
+        map.put("adzone_id", "111236250012");
+        map.put("type", "1");
+        String url = "https://api.taobaokeapi.com";
+        String data = client.getData(url, map);
+        System.out.println(data);
+    }
+
 
 }

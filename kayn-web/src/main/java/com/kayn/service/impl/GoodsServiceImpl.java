@@ -7,11 +7,9 @@ import com.kayn.pojo.good.*;
 import com.kayn.recommender.DataTransform;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
-import com.kayn.service.RecommenderService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -179,7 +177,7 @@ public class GoodsServiceImpl implements GoodsService {
         try {
             int id = 0, type = 0, sortOrder = 0, position = 0, limitNum = 8, status = 1;
 
-            // 轮播图板块
+            // 轮播图板块(模拟数据)
             PanelResult pr = new PanelResult();
             List<PanelContents> pcs = new ArrayList<>();
             PanelContents pc1 = new PanelContents()

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
+@Deprecated
 @Service
 public class RFM {
 
@@ -70,6 +71,6 @@ public class RFM {
             M = 1;
         }
 
-        return R*100 + F*10 + M;
+        return R * 100 + F * 10 + M;
     }
 }

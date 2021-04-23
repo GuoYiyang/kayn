@@ -1,6 +1,7 @@
 package com.kayn.kafka
 
 import com.alibaba.fastjson.JSON
+import com.kayn.ml.KMeansTrain.Train
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.elasticsearch.spark._
 import org.apache.spark.{SparkConf, SparkContext}
@@ -80,23 +81,21 @@ object KafkaStreaming {
   val orderList: mutable.MutableList[OrderMeta] = mutable.MutableList[OrderMeta]()
   val payList: mutable.MutableList[PayMeta] = mutable.MutableList[PayMeta]()
 
+  val sparkConf: SparkConf = new SparkConf().setAppName("SparkStreaming").setMaster("local[*]")
+  sparkConf.set("es.nodes", "localhost")
+  sparkConf.set("es.port", "9200")
+  sparkConf.set("es.index.auto.create", "true")
+  sparkConf.set("es.index.read.missing.as.empty", "true")
+
+  val sparkContext = new SparkContext(sparkConf)
+
   def main(args: Array[String]): Unit = {
 
     val EsConfig = Map(
       "es.mapping.id" -> "username",
       "es.write.operation" -> "upsert"
     )
-
-    val conf = new SparkConf().setAppName("SparkStreaming").setMaster("local[*]")
-    conf.set("es.nodes", "localhost")
-    conf.set("es.port", "9200")
-    conf.set("es.index.auto.create", "true")
-    conf.set("es.index.read.missing.as.empty", "true")
-
-
-
-    val sc = new SparkContext(conf)
-    val ssc = new StreamingContext(sc, Seconds(30))
+    val ssc = new StreamingContext(sparkContext, Seconds(30))
 
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> "localhost:9092",
@@ -135,7 +134,7 @@ object KafkaStreaming {
       }
 
       if (queryList.nonEmpty) {
-        val queryRDD = sc.parallelize(queryList)
+        val queryRDD = sparkContext.parallelize(queryList)
         queryRDD
           .map(x => {
             val key = x.username + "_" + x.query
@@ -157,7 +156,7 @@ object KafkaStreaming {
       }
 
       if (catList.nonEmpty) {
-        val catRDD = sc.parallelize(catList)
+        val catRDD = sparkContext.parallelize(catList)
         catRDD
           .map(x => {
             val key = x.username + "_" + x.cat
@@ -179,7 +178,7 @@ object KafkaStreaming {
       }
 
       if (payList.nonEmpty) {
-        val payRDD = sc.parallelize(payList)
+        val payRDD = sparkContext.parallelize(payList)
         payRDD
           .map(x => {
             (x.username, x.orderTotal)
@@ -195,6 +194,8 @@ object KafkaStreaming {
             PayCnt(x._1, orderTotal, payCnt, System.currentTimeMillis())
           })
           .saveToEs("user_pay_order", EsConfig)
+          // k-means 聚类分析
+          Train()
       }
     })
 
@@ -230,9 +231,8 @@ object KafkaStreaming {
         payList += PayMeta(username = un, orderTotal = total, time = createTime)
       }
     } catch {
-      case ex: Exception => {
-        ex.printStackTrace() // 打印到标准err
-      }
+      case e: Exception =>
+        e.printStackTrace() // 打印到标准err
     }
   }
 

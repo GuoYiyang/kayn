@@ -1,6 +1,6 @@
 package com.kayn.service;
 
-
+@Deprecated
 public interface RecommenderService {
 
     /**

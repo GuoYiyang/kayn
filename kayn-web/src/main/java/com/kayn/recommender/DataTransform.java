@@ -93,6 +93,7 @@ public class DataTransform {
         return res;
     }
 
+    @Deprecated
     public Integer getUserRFM(String username) {
         Integer res = null;
         Map<String, Object> map = EsClient.getData("user_pay_order", username);

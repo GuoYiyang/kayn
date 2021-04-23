@@ -2,12 +2,10 @@ package com.kayn.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kayn.mapper.user.UserInfoMapper;
-import com.kayn.mapper.user.UserLabelMapper;
 import com.kayn.mapper.user.UserMapper;
 import com.kayn.mapper.user.UserRoleMapper;
 import com.kayn.pojo.user.User;
 import com.kayn.pojo.user.UserInfo;
-import com.kayn.pojo.user.UserLabel;
 import com.kayn.pojo.user.UserRole;
 import com.kayn.result.Result;
 import com.kayn.service.LoginService;
