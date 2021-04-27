@@ -1,6 +1,7 @@
 package com.kayn.pojo.user;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -19,4 +20,10 @@ public class UserInfo {
     private String address;
     private String file;
     private String description;
+    @TableField(exist = false)
+    private String password;
+    @TableField(exist = false)
+    private String role;
+    @TableField(exist = false)
+    private String rfm;
 }

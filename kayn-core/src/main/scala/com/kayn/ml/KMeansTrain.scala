@@ -139,7 +139,7 @@ object KMeansTrain {
     mysqlProp.put("user", "root")
     mysqlProp.put("password", "123456")
     val url = "jdbc:mysql://localhost:3306/kayn?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai"
-    sqlDF.write.mode(SaveMode.Overwrite).jdbc(url, "kayn_user_rmf", mysqlProp)
+    sqlDF.write.mode(SaveMode.Overwrite).jdbc(url, "kayn_user_rfm", mysqlProp)
 
   }
 
