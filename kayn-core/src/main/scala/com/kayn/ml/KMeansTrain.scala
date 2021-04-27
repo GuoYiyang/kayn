@@ -127,7 +127,6 @@ object KMeansTrain {
     )
     val modelDF: DataFrame = predictionDF
       .select(
-
         $"username",
         index_to_tag($"prediction").as("rfm")
       )

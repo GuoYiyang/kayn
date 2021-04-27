@@ -6,6 +6,7 @@
     <modules>
         <module>kayn-web</module>
         <module>kayn-core</module>
+        <module>kayn-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

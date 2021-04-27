@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kayn.iml" filepath="$PROJECT_DIR$/kayn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kayn-admin/kayn-admin.iml" filepath="$PROJECT_DIR$/kayn-admin/kayn-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/kayn-core/kayn-core.iml" filepath="$PROJECT_DIR$/kayn-core/kayn-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/kayn-web/kayn-web.iml" filepath="$PROJECT_DIR$/kayn-web/kayn-web.iml" />
     </modules>

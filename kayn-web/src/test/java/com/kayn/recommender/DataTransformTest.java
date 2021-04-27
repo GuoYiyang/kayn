@@ -23,8 +23,4 @@ class DataTransformTest {
         System.out.println(dataTransform.getPreferCat("zhangsan"));
     }
 
-    @Test
-    void getUserRFM() {
-        System.out.println(dataTransform.getUserRFM("zhangsan"));
-    }
 }

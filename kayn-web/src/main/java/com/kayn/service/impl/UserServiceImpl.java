@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.kayn.mapper.user.UserInfoMapper;
 import com.kayn.pojo.user.UserInfo;
 import com.kayn.result.Result;
-import com.kayn.service.RecommenderService;
 import com.kayn.service.UserService;
 import org.springframework.stereotype.Service;
 
