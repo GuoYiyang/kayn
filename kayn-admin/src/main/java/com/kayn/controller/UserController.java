@@ -5,10 +5,14 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.kayn.dto.R;
 import com.kayn.dto.UserListDto;
+import com.kayn.mapper.idf.CatIdfMapper;
+import com.kayn.mapper.idf.QueryIdfMapper;
 import com.kayn.mapper.user.UserInfoMapper;
 import com.kayn.mapper.user.UserMapper;
 import com.kayn.mapper.user.UserRFMMapper;
 import com.kayn.mapper.user.UserRoleMapper;
+import com.kayn.pojo.idf.CatIdf;
+import com.kayn.pojo.idf.QueryIdf;
 import com.kayn.pojo.user.User;
 import com.kayn.pojo.user.UserInfo;
 import com.kayn.pojo.user.UserRFM;
@@ -33,6 +37,12 @@ public class UserController {
     @Resource
     UserRFMMapper userRFMMapper;
 
+    @Resource
+    CatIdfMapper catIdfMapper;
+
+    @Resource
+    QueryIdfMapper queryIdfMapper;
+
     @GetMapping("/getUserList")
     public R getUserList(@RequestParam(value = "username", required = false) String username,
                          @RequestParam Integer pageIndex,
@@ -49,7 +59,10 @@ public class UserController {
                 User user = userMapper.selectOne(new QueryWrapper<User>().eq("username", userInfo.getUsername()));
                 UserRole userRole = userRoleMapper.selectOne(new QueryWrapper<UserRole>().eq("username", userInfo.getUsername()));
                 UserRFM userRFM = userRFMMapper.selectOne(new QueryWrapper<UserRFM>().eq("username", userInfo.getUsername()));
-                userInfo.setPassword(user.getPassword()).setRole(userRole.getRole()).setRfm(userRFM.getRfm());
+                userInfo.setPassword(user.getPassword()).setRole(userRole.getRole());
+                if(userRFM != null) {
+                    userInfo.setRfm(userRFM.getRfm());
+                }
             }
             Integer count = userInfoMapper.selectCount(queryWrapper);
             r.setCode(200).setData(new UserListDto().setUserList(userInfoList).setTotalCnt(count));
@@ -88,6 +101,8 @@ public class UserController {
             userInfoMapper.delete(new QueryWrapper<UserInfo>().eq("username", username));
             userRoleMapper.delete(new QueryWrapper<UserRole>().eq("username", username));
             userRFMMapper.delete(new QueryWrapper<UserRFM>().eq("username", username));
+            catIdfMapper.delete(new QueryWrapper<CatIdf>().eq("username", username));
+            queryIdfMapper.delete(new QueryWrapper<QueryIdf>().eq("username", username));
             r.setCode(200);
         } catch (Exception e) {
             r.setCode(500);

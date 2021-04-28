@@ -2,8 +2,13 @@ package com.kayn.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kayn.client.HttpClient;
+import com.kayn.mapper.slide.SlideMapper;
+import com.kayn.mapper.user.UserRFMMapper;
 import com.kayn.pojo.good.*;
+import com.kayn.pojo.slide.Slide;
+import com.kayn.pojo.user.UserRFM;
 import com.kayn.recommender.DataTransform;
 import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
@@ -38,6 +43,12 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Resource
     private DataTransform dataTransform;
+
+    @Resource
+    private UserRFMMapper userRFMMapper;
+
+    @Resource
+    private SlideMapper slideMapper;
 
 
     public Result<GoodPage> getGoodPage(String q, Integer pageSize, Integer pageNo, Integer sort, Double priceGt, Double priceLte) {
@@ -173,40 +184,23 @@ public class GoodsServiceImpl implements GoodsService {
         List<PanelResult> resultList = new ArrayList<>();
         String preferQuery = dataTransform.getPreferQuery(username);
         String preferCat = dataTransform.getPreferCat(username);
+        String rfm = userRFMMapper.selectOne(new QueryWrapper<UserRFM>().eq("username", username)).getRfm();
 
         try {
             int id = 0, type = 0, sortOrder = 0, position = 0, limitNum = 8, status = 1;
-
-            // 轮播图板块(模拟数据)
             PanelResult pr = new PanelResult();
             List<PanelContents> pcs = new ArrayList<>();
-            PanelContents pc1 = new PanelContents()
-                    .setType(0)
-                    .setPanelId(7)
-                    .setSortOrder(1)
-                    .setFullUrl("https://re.taobao.com/action_ecpm_home?ali_trackid=19_cb52ba16d669bce18bca1094e50e3ca2")
-                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg")
-                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg");
-
-            PanelContents pc2 = new PanelContents()
-                    .setType(0)
-                    .setPanelId(7)
-                    .setSortOrder(2)
-                    .setFullUrl("https://re.taobao.com/?pid=&ali_trackid=19_16910387271a9217ff3cb06e58df15eb")
-                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg")
-                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg");
-
-            PanelContents pc3 = new PanelContents()
-                    .setType(0)
-                    .setPanelId(7)
-                    .setSortOrder(3)
-                    .setFullUrl("https://re.taobao.com/action_ecpm_home?ali_trackid=19_fdb896ac70e18d75c8b5460e40c9a08d")
-                    .setProductImageBig("https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg")
-                    .setPicUrl("https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg");
-
-            pcs.add(pc1);
-            pcs.add(pc2);
-            pcs.add(pc3);
+            if (rfm != null) {
+                Slide slide = slideMapper.selectOne(new QueryWrapper<Slide>().eq("rfm", rfm));
+                PanelContents pc1 = new PanelContents()
+                        .setType(0)
+                        .setPanelId(7)
+                        .setSortOrder(1)
+                        .setFullUrl(slide.getUrl())
+                        .setPicUrl(slide.getPic())
+                        .setProductImageBig(slide.getPic());
+                pcs.add(pc1);
+            }
             pr.setId(7)
                     .setName("轮播图")
                     .setType(type ++)
