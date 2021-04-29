@@ -43,6 +43,32 @@ public class UserController {
     @Resource
     QueryIdfMapper queryIdfMapper;
 
+    @GetMapping("/checkRole")
+    public R checkRole(@RequestParam String username,
+                       @RequestParam String password){
+        R r = new R();
+        try {
+            User user = userMapper.selectOne(new QueryWrapper<User>()
+                    .eq("username", username)
+                    .eq("password", password));
+            if (user == null) {
+                r.setCode(500);
+            } else {
+                UserRole userRole = userRoleMapper.selectOne(new QueryWrapper<UserRole>()
+                        .eq("username", username));
+                if (!"ROLE_ADMIN".equals(userRole.getRole())) {
+                    r.setCode(500);
+                } else {
+                    r.setCode(200);
+                }
+            }
+        } catch (Exception e) {
+            r.setCode(500);
+            e.printStackTrace();
+        }
+        return r;
+    }
+
     @GetMapping("/getUserList")
     public R getUserList(@RequestParam(value = "username", required = false) String username,
                          @RequestParam Integer pageIndex,
