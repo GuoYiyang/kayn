@@ -3,9 +3,13 @@ package com.kayn.recommender;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.kayn.client.EsClient;
+import com.kayn.mapper.idf.CatCntMapper;
 import com.kayn.mapper.idf.CatIdfMapper;
+import com.kayn.mapper.idf.QueryCntMapper;
 import com.kayn.mapper.idf.QueryIdfMapper;
+import com.kayn.pojo.idf.CatCnt;
 import com.kayn.pojo.idf.CatIdf;
+import com.kayn.pojo.idf.QueryCnt;
 import com.kayn.pojo.idf.QueryIdf;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +29,12 @@ public class DataTransform {
     @Resource
     private CatIdfMapper catIdfMapper;
 
+    @Resource
+    private QueryCntMapper queryCntMapper;
+
+    @Resource
+    private CatCntMapper catCntMapper;
+
     public String getPreferQuery(String username) {
         String res = null;
         Map<String, Object> map = EsClient.getData("user_query_cnt", username);
@@ -41,6 +51,15 @@ public class DataTransform {
                 Integer cnt = Integer.parseInt(query.get("cnt").toString());
                 // 获取TF-IDF推荐值
                 Double score = tfidf.getTFIDF(q, cnt);
+
+                QueryCnt queryCnt = new QueryCnt().setUsername(username).setQuery(q).setCnt(cnt).setScore(score);
+                QueryWrapper<QueryCnt> queryWrapper = new QueryWrapper<QueryCnt>().eq("username", username).eq("query", q);
+                if (queryCntMapper.selectOne(queryWrapper) == null) {
+                    queryCntMapper.insert(queryCnt);
+                } else {
+                    queryCntMapper.update(queryCnt, queryWrapper);
+                }
+
                 if (score > maxScore) {
                     maxScore = score;
                     res = q;
@@ -69,6 +88,15 @@ public class DataTransform {
                 Integer cnt = Integer.parseInt(cat.get("cnt").toString());
                 // 获取TF-IDF推荐值
                 Double score = tfidf.getTFIDF(tag, cnt);
+
+                CatCnt catCnt = new CatCnt().setUsername(username).setCat(tag).setCnt(cnt).setScore(score);
+                QueryWrapper<CatCnt> queryWrapper = new QueryWrapper<CatCnt>().eq("username", username).eq("cat", tag);
+                if (catCntMapper.selectOne(queryWrapper) == null) {
+                    catCntMapper.insert(catCnt);
+                } else {
+                    catCntMapper.update(catCnt, queryWrapper);
+                }
+
                 if (score > maxScore) {
                     maxScore = score;
                     res = tag;
