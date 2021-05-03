@@ -21,3 +21,6 @@ taobaoke:
   usertoken: "0c0d1cc55a4226364c0a914a5a04223d"
   site_id: "2255900096"
   adzone_id: "111236250012"
+
+es:
+  analyzerurl: "http://localhost:9200/_analyze"

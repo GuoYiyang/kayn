@@ -2,7 +2,9 @@ package com.kayn.client;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -44,6 +46,38 @@ public class HttpClient {
         } catch (URISyntaxException | IOException e) {
             e.printStackTrace();
         } finally {
+            // 关闭资源
+            if (response != null) {
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return null;
+    }
+
+    public String postData(String url, String json) {
+        CloseableHttpResponse response = null;
+        try{
+            //创建httpPost请求
+            HttpPost httpPost = new HttpPost(url);
+            //给httpPost设置JSON格式的参数
+            StringEntity requestEntity = new StringEntity(json,"utf-8");
+            requestEntity.setContentEncoding("UTF-8");
+            httpPost.setHeader("Content-type", "application/json");
+            httpPost.setEntity(requestEntity);
+            // 执行http请求
+            response = httpclient.execute(httpPost);
+            // 获取响应消息
+            return EntityUtils.toString(response.getEntity(), "UTF-8");
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        finally {
             // 关闭资源
             if (response != null) {
                 try {

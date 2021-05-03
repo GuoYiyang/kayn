@@ -1,6 +1,8 @@
 package com.kayn.controller;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.kayn.client.HttpClient;
 import com.kayn.pojo.good.GoodDetail;
 import com.kayn.pojo.good.GoodPage;
 import com.kayn.pojo.good.PanelResult;
@@ -9,6 +11,7 @@ import com.kayn.result.Result;
 import com.kayn.service.GoodsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -20,6 +23,12 @@ import java.util.List;
 public class GoodsController {
 
     private static final Logger logger = LoggerFactory.getLogger(GoodsController.class);
+
+    @Value("${es.analyzerurl}")
+    String analyzerUrl;
+
+    @Resource
+    HttpClient httpClient;
 
     @Resource
     private GoodsService goodsService;
@@ -54,10 +63,21 @@ public class GoodsController {
                     q = "默认";
                 }
             }
+
+            // ik分词器
+            HashMap<String, String> analyzerMap = new HashMap<>();
+            analyzerMap.put("analyzer", "ik_smart");
+            analyzerMap.put("text", q);
+            String response = httpClient.postData(analyzerUrl, JSONObject.toJSONString(analyzerMap));
+            JSONArray jsonArray = JSONObject.parseObject(response).getJSONArray("tokens");
             HashMap<String, String> info = new HashMap<>();
             info.put("username", username);
-            info.put("query", q);
-            logger.info(JSONObject.toJSONString(info));
+            for(Object data: jsonArray) {
+                JSONObject json = (JSONObject) data;
+                info.put("query", json.getString("token"));
+                logger.info(JSONObject.toJSONString(info));
+            }
+
         } else {
             q = "默认";
         }
